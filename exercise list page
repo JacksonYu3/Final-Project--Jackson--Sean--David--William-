@@ -13,6 +13,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+import home_screen
 
 
 # service = Service(ChromeDriverManager().install())
@@ -20,22 +21,14 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    root.title("Exercise App")
-    root.attributes("-fullscreen", True)
+    root2 = tk.Tk()
+    root2.title("Exercise App")
+    root2.attributes("-fullscreen", True)
 
 
     #makes you able to switch between fullscreen and not by f11 and esc
-    root.bind("<F11>", lambda event: root.attributes("-fullscreen", not root.attributes("-fullscreen")))
-    root.bind("<Escape>", lambda event: root.attributes("-fullscreen", False))
-
-
-#creates the image of the human bodies
-width = root.winfo_screenwidth()
-height = root.winfo_screenheight()
-image = ImageTk.PhotoImage(Image.open("C:\\Users\\Dan\\Documents\\GitHub\\Exercise Project\\Images\\bodies.webp"))
-image_label = tk.Label(root, image=image)
-image_label.place(x=width/2, y=height/2, anchor="center")
+    root2.bind("<F11>", lambda event: root2.attributes("-fullscreen", not root2.attributes("-fullscreen")))
+    root2.bind("<Escape>", lambda event: root2.attributes("-fullscreen", False))
 
 
 
@@ -44,52 +37,75 @@ image_label.place(x=width/2, y=height/2, anchor="center")
 
 #back button function
 def back_fun():
-    print("back")
-    root.quit()
+    root2.quit()
+    root1 = tk.Tk()
+    home_screen.home_screen_fun(root1)
+
+
 
 
 #body part functions
 def shoulders_fun():
     print("shoulders")
-    root.quit()
+    root2.quit()
 def biceps_fun():
     print("biceps")
-    root.quit()
+    root2.quit()
 def triceps_fun():
     print("triceps")
-    root.quit()
+    root2.quit()
 def forearms_fun():
     print("forearms")
-    root.quit()
+    root2.quit()
 def chest_fun():
     print("chest")
-    root.quit()
+    root2.quit()
 def back_fun():
     print("back")
-    root.quit()
+    root2.quit()
 def abs_fun():
     print("abs")
-    root.quit()
+    root2.quit()
 def glutes_fun():
     print("glutes")
-    root.quit()
+    root2.quit()
 def legs_fun():
     print("legs")
-    root.quit()
+    root2.quit()
 def calves_fun():
     print("calves")
-    root.quit()
+    root2.quit()
 
 
 
 
-def bodies_buttons():
+def bodies_buttons(root):
     #creates the image of the human bodies
     width = root.winfo_screenwidth()
     height = root.winfo_screenheight()
+    global image
     image = ImageTk.PhotoImage(Image.open("C:\\Users\\Dan\\Documents\\GitHub\\Exercise Project\\Images\\bodies.webp"))
-    image_label = tk.Label(root, image=image)
-    image_label.place(x=width/2, y=height/2, anchor="center")
+    canvas = tk.Canvas(root)
+    canvas.create_image(width / 2, height / 2, image=image, anchor="center")
+
+
+    #lines connecting buttons to body image
+    canvas.create_line(9*width/32, 175, 530, 195, width=3)
+    canvas.create_line(9*width/32, 275, 530, 275, width=3)
+    canvas.create_line(9*width/32, 375, 520, 375, width=3)
+    canvas.create_line(9*width/32, 225, 530, 225, width=3)
+    canvas.create_line(9*width/32, 325, 600, 325, width=3)
+    canvas.create_line(9*width/32, 500, 570, 500, width=3)
+    canvas.create_line(7*width/10, 235, 985, 245, width=3)
+    canvas.create_line(7*width/10, 285, 900, 285, width=3)
+    canvas.create_line(7*width/10, 400, 940, 400, width=3)
+    canvas.create_line(7*width/10, 500, 940, 500, width=3)
+    canvas.create_line(7*width/10, 650, 940, 650, width=3)
+
+
+    canvas.pack(fill="both", expand=True)
+
+
 
 
     #back button
@@ -114,15 +130,15 @@ def bodies_buttons():
     #body part button placements
     shoulders_btn.place(x=9*width/32, y=175, anchor="e")
     biceps_btn.place(x=9*width/32, y=275, anchor="e")
-    triceps_btn.place(x=7*width/10, y=235)
+    triceps_btn.place(x=7*width/10, y=235, anchor="w")
     forearms_btn.place(x=9*width/32, y=375, anchor="e")
     chest_btn.place(x=9*width/32, y=225, anchor="e")
-    back_btn.place(x=7*width/10, y=285)
+    back_btn.place(x=7*width/10, y=285, anchor="w")
     abs_btn.place(x=9*width/32, y=325, anchor="e")
-    glutes_btn.place(x=7*width/10, y=400)
+    glutes_btn.place(x=7*width/10, y=400, anchor="w")
     legs_btn1.place(x=9*width/32, y=500, anchor="e")
-    legs_btn2.place(x=7*width/10, y=500)
-    calves_btn.place(x=7*width/10, y=650)
+    legs_btn2.place(x=7*width/10, y=500, anchor="w")
+    calves_btn.place(x=7*width/10, y=650, anchor="w")
 
 
 
@@ -134,9 +150,6 @@ def bodies_buttons():
 if __name__ == "__main__":
     bodies_buttons()
     # driver.quit()
-    root.mainloop()
-
-
-
+    root2.mainloop()
 
 

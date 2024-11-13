@@ -1,601 +1,273 @@
-Muscle Group,Exercise Name,Equipment,Animation
-"
+Name,url,primary,secondary,GIF url
+Assisted Dip,https://www.strengthlog.com/assisted-dips/,['|Chest|Front Deltoid|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/11/assisted.dip_.gif?resize=600%2C589&ssl=1
+Band-Assisted Bench Press,https://www.strengthlog.com/band-assisted-bench-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/bench-with-band-assistance.gif?resize=600%2C600&ssl=1
+Bar Dip,https://www.strengthlog.com/bar-dip/,['|Chest|Front Deltoid|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Dips.gif?resize=600%2C600&ssl=1
+Bench Press,https://www.strengthlog.com/bench-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/09/bench-press.gif?resize=600%2C600&ssl=1
+Bench Press Against Band,https://www.strengthlog.com/bench-press-against-band/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/bench-against-band.gif?resize=600%2C600&ssl=1
+Board Press,https://www.strengthlog.com/board-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/board-bench-press.gif?resize=600%2C600&ssl=1
+Cable Chest Press,https://www.strengthlog.com/cable-chest-press/,['|Chest|'],['|Front Deltoid|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-chest-press.gif?resize=600%2C600&ssl=1
+Close-Grip Bench Press,https://www.strengthlog.com/close-grip-bench-press/,['|Triceps|'],['|Chest|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/09/Close-grip-bench-press.gif?resize=600%2C600&ssl=1
+Close-Grip Feet-Up Bench Press,https://www.strengthlog.com/close-grip-feet-up-bench-press/,['|Triceps|'],['|Chest|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Close-Grip-Feet-Up-Bench-Press.gif?resize=600%2C600&ssl=1
+Decline Bench Press,https://www.strengthlog.com/decline-bench-press/,['|Chest|'],['|Triceps|Front Deltoid |'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Decline-Bench-Press.gif?resize=600%2C600&ssl=1
+Decline Push-Up,https://www.strengthlog.com/decline-push-up/,['|Chest|Front Deltoid|'],['|Triceps|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/Decline-push-up.gif?resize=600%2C600&ssl=1
+Dumbbell Chest Fly,https://www.strengthlog.com/dumbbell-chest-fly/,['|Chest|'],['|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Chest-Fly.gif?resize=600%2C600&ssl=1
+Dumbbell Chest Press,https://www.strengthlog.com/dumbbell-chest-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Chest-Press.gif?resize=600%2C600&ssl=1
+Dumbbell Decline Chest Press,https://www.strengthlog.com/dumbbell-decline-chest-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/02/dumbbell-decline-chest-press.gif?resize=600%2C601&ssl=1
+Dumbbell Floor Press,https://www.strengthlog.com/dumbbell-floor-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/09/dumbbell-floor-press.gif?resize=600%2C600&ssl=1
+Dumbbell Pullover,https://www.strengthlog.com/dumbbell-pullover/,['|Chest|'],['|Lats|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Pullover.gif?resize=600%2C600&ssl=1
+Feet-Up Bench Press,https://www.strengthlog.com/feet-up-bench-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/09/Feet-Up-Bench-Press.gif?resize=600%2C600&ssl=1
+Floor Press,https://www.strengthlog.com/floor-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Floor-Press.gif?resize=600%2C600&ssl=1
+Incline Bench Press,https://www.strengthlog.com/incline-bench-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Incline-Bench-Press.gif?resize=600%2C600&ssl=1
+Incline Dumbbell Press,https://www.strengthlog.com/dumbbell-incline-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Incline-Press.gif?resize=600%2C600&ssl=1
+Incline Push-Up,https://www.strengthlog.com/incline-push-up/,['|Chest|Front Deltoid|'],['|Triceps|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/03/incline-push-up-exercise-technique.gif?resize=600%2C600&ssl=1
+Kettlebell Floor Press,https://www.strengthlog.com/kettlebell-floor-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/kettlebell-floorpress.gif?resize=600%2C600&ssl=1
+Kneeling Incline Push-Up,https://www.strengthlog.com/kneeling-incline-push-up/,['|Chest|Front Deltoid|'],['|Triceps|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/11/Kneeling-incline-push-up.gif?resize=600%2C600&ssl=1
+Kneeling Push-Up,https://www.strengthlog.com/kneeling-push-up/,['|Chest|Front Deltoid|'],['|Triceps|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Kneeling-push-ups.gif?resize=600%2C600&ssl=1
+Machine Chest Fly,https://www.strengthlog.com/machine-chest-fly/,['|Chest|'],['|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/machine-chest-fly.gif?resize=600%2C600&ssl=1
+Machine Chest Press,https://www.strengthlog.com/machine-chest-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/machine-chest-press.gif?resize=600%2C600&ssl=1
+Pec Deck,https://www.strengthlog.com/pec-deck/,['|Chest|'],['|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/pec-deck.gif?resize=600%2C600&ssl=1
+Pin Bench Press,https://www.strengthlog.com/pin-bench-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/pin-bench-press.gif?resize=600%2C600&ssl=1
+Push-Up,https://www.strengthlog.com/push-up/,['|Chest|Front Deltoid|'],['|Triceps|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Push-up.gif?resize=600%2C600&ssl=1
+Push-Up Against Wall,https://www.strengthlog.com/push-up-against-wall/,['|Chest|Front Deltoid|'],['|Triceps|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/03/pushups-against-wall.gif?resize=600%2C600&ssl=1
+Push-Ups With Feet in Rings,https://www.strengthlog.com/push-ups-with-feet-in-rings/,['|Chest|Front Deltoid|'],['|Triceps|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Push-ups-with-feet-in-rings.gif?resize=600%2C600&ssl=1
+Resistance Band Chest Fly,https://www.strengthlog.com/resistance-band-chest-fly/,,,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/10/resistance-band-chest-fly-ezgif.gif?resize=600%2C600&ssl=1
+Smith Machine Bench Press,https://www.strengthlog.com/smith-machine-bench-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/smith-machine-bench-press.gif?resize=600%2C600&ssl=1
+Smith Machine Incline Bench Press,https://www.strengthlog.com/smith-machine-incline-bench-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/smith-machine-incline-bench-press.gif?resize=600%2C600&ssl=1
+Smith Machine Reverse Grip Bench Press,https://www.strengthlog.com/smith-machine-reverse-grip-bench-press/,['|Chest|Front Deltoid|'],['|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/11/Smithmachinereverse-grip-bench-press.gif?resize=600%2C600&ssl=1
+Standing Cable Chest Fly,https://www.strengthlog.com/standing-cable-chest-fly/,['|Chest|'],['|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-chest-fly.gif?resize=600%2C600&ssl=1
+Standing Resistance Band Chest Fly,https://www.strengthlog.com/standing-resistance-band-chest-fly/,['|Chest|'],['|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/02/standing-resistance-band-chest-fly.gif?resize=600%2C600&ssl=1
+Arnold Press,https://www.strengthlog.com/arnold-press/,['|Front Deltoid|'],['|Lateral Deltoid|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/arnold-press.gif?resize=600%2C600&ssl=1
+Band External Shoulder Rotation,https://www.strengthlog.com/band-external-shoulder-rotation/,['|Rotator Cuff (posterior)|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Band-shoulder-external-rotation.gif?resize=600%2C600&ssl=1
+Band Internal Shoulder Rotation,https://www.strengthlog.com/band-internal-shoulder-rotation/,['|Rotator Cuff (anterior)|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Band-shoulder-internal-rotation.gif?resize=600%2C600&ssl=1
+Band Pull-Apart,https://www.strengthlog.com/band-pull-apart/,['|Rear Deltoid|Rotator Cuff|'],['|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/Band-Pull-Apart.gif?resize=600%2C600&ssl=1
+Barbell Front Raise,https://www.strengthlog.com/barbell-front-raise/,['|Front Deltoid|'],['|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Barbell-Front-Raise.gif?resize=600%2C600&ssl=1
+Barbell Rear Delt Row,https://www.strengthlog.com/barbell-rear-delt-row/,['|Rear Deltoid|Trapezius|'],['|Rotator Cuff|Biceps|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Barbell-Rear-Delt-Row.gif?resize=600%2C600&ssl=1
+Barbell Upright Row,https://www.strengthlog.com/barbell-upright-row/,['|Lateral Deltoid|'],['|Front Deltoid|Trapezius|Biceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/11/Barbell-upright-row.gif?resize=600%2C600&ssl=1
+Behind the Neck Press,https://www.strengthlog.com/behind-the-neck-press/,['|Front Deltoid|Lateral Deltoid|'],['|Trapezius|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Behind-the-neck-press.gif?resize=600%2C600&ssl=1
+Cable Lateral Raise,https://www.strengthlog.com/cable-lateral-raise/,['|Lateral Deltoid|'],['|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-lateral-raise.gif?resize=600%2C600&ssl=1
+Cable Rear Delt Row,https://www.strengthlog.com/cable-rear-delt-row/,['|Rear Deltoid|Rotator Cuff|'],['|Trapezius|Biceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-rear-delt-row.gif?resize=600%2C600&ssl=1
+Cuban Press,https://www.strengthlog.com/cuban-press/,['|Front Deltoid|'],['|Lateral Deltoid|Read Deltoid|Trapezius|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/cuban-press.gif?resize=600%2C600&ssl=1
+Dumbbell Front Raise,https://www.strengthlog.com/dumbbell-front-raise/,['|Front Deltoid|'],['|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Front-Raise.gif?resize=600%2C600&ssl=1
+Dumbbell Horizontal Internal Shoulder Rotation,https://www.strengthlog.com/dumbbell-horizontal-internal-shoulder-rotation/,['|Rotator Cuff (anterior)|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/DB-horizontal-internal-shoulder-rotation.gif?resize=600%2C600&ssl=1
+Dumbbell Horizontal External Shoulder Rotation,https://www.strengthlog.com/dumbbell-horizontal-external-shoulder-rotation/,['|Rotator Cuff (posterior)|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/DB-standing-external-shoulder-rotation.gif?resize=600%2C600&ssl=1
+Dumbbell Lateral Raise,https://www.strengthlog.com/dumbbell-lateral-raise/,['|Lateral Deltoid|'],['|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Dumbbell-Lateral-Raise.gif?resize=600%2C600&ssl=1
+Dumbbell Rear Delt Row,https://www.strengthlog.com/dumbbell-rear-delt-row/,['|Rear Deltoid|Trapezius|'],['|Rotator Cuff|Biceps|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Dumbbell-Rear-Delt-Row.gif?resize=600%2C600&ssl=1
+Dumbbell Shoulder Press,https://www.strengthlog.com/dumbbell-shoulder-press/,['|Front Deltoid|'],['|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Dumbbell-shoulder-press.gif?resize=600%2C600&ssl=1
+Face Pull,https://www.strengthlog.com/face-pull/,['|Rear Deltoid|Rotator Cuff|'],['|Trapezius|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/05/face-pull.gif?resize=600%2C600&ssl=1
+Front Hold,https://www.strengthlog.com/front-hold/,['|Front Deltoid|'],['|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/02/front-hold.jpg?resize=700%2C700&ssl=1
+Landmine Press,https://www.strengthlog.com/landmine-press/,['|Front Deltoid|'],['|Triceps|Chest|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/landmine-press.gif?resize=600%2C600&ssl=1
+Lying Dumbbell External Shoulder Rotation,https://www.strengthlog.com/lying-dumbbell-external-shoulder-rotation/,['|Rotator Cuff (posterior)|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Dumbbell-lying-external-shoulder-rotation.gif?resize=600%2C600&ssl=1
+Lying Dumbbell Internal Shoulder Rotation,https://www.strengthlog.com/lying-dumbbell-internal-shoulder-rotation/,['|Rotator Cuff (anterior)|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/DB-lying-internal-shoulder-rotation-on-bench.gif?resize=600%2C600&ssl=1
+Machine Lateral Raise,https://www.strengthlog.com/machine-lateral-raise/,['|Lateral Deltoid|'],['|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/lateral-raise-machine.gif?resize=600%2C600&ssl=1
+Machine Shoulder Press,https://www.strengthlog.com/machine-shoulder-press/,['|Front Deltoid|'],['|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/machine-shoulder-press.gif?resize=600%2C600&ssl=1
+Monkey Row,https://www.strengthlog.com/monkey-row/,['|Lateral Deltoid|'],['|Rear Deltoid|Trapezius|Biceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/09/monkey-row.gif?resize=526%2C526&ssl=1
+Overhead Press,https://www.strengthlog.com/overhead-press/,['|Front Deltoid|'],['|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Overhead-press-exercise.gif?resize=600%2C600&ssl=1
+Plate Front Raise,https://www.strengthlog.com/plate-front-raise/,['|Front Deltoid|'],['|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Plate-front-raise.gif?resize=600%2C600&ssl=1
+Power Jerk,https://www.strengthlog.com/power-jerk/,['|Front Deltoid|'],['|Quads|Glutes|Adductors|Lower Back|Trapezius|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/power-jerk.gif?resize=600%2C600&ssl=1
+Push Press,https://www.strengthlog.com/push-press/,['|Front Deltoid|'],['|Quads|Glutes|Adductors|Lower Back|Trapezius|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/push-press.gif?resize=600%2C600&ssl=1
+Reverse Cable Flyes,https://www.strengthlog.com/reverse-cable-fly/,['|Rear Deltoid|Rotator Cuff|'],['|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/08/Reverse-cable-fly.gif?resize=600%2C600&ssl=1
+Reverse Dumbbell Flyes,https://www.strengthlog.com/reverse-dumbbell-flyes/,['|Rear Deltoid|Rotator Cuff|'],['|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Reverse-dumbbell-flyes.gif?resize=600%2C600&ssl=1
+Reverse Machine Fly,https://www.strengthlog.com/reverse-machine-fly/,['|Rear Deltoid|Rotator Cuff|'],['|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/reverse-machine-fly.gif?resize=600%2C600&ssl=1
+Seated Dumbbell Shoulder Press,https://www.strengthlog.com/seated-dumbbell-shoulder-press/,['|Front Deltoid|'],['|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/11/Seated-dumbbell-shoulder-press.gif?resize=600%2C600&ssl=1
+Seated Barbell Overhead Press,https://www.strengthlog.com/seated-barbell-overhead-press/,['|Front Deltoid|'],['|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/11/Seated-barbell-overhead-press.gif?resize=600%2C600&ssl=1
+Seated Smith Machine Shoulder Press,https://www.strengthlog.com/seated-smith-machine-shoulder-press/,['|Front Deltoid|'],['|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/smith-machine-shoulder-press.gif?resize=600%2C600&ssl=1
+Snatch Grip Behind the Neck Press,https://www.strengthlog.com/snatch-grip-behind-the-neck-press/,['|Front Deltoid|Lateral Deltoid|'],['|Trapezius|Triceps|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/snatch-grip-behind-the-neck-press.gif?resize=600%2C600&ssl=1
+Squat Jerk,https://www.strengthlog.com/squat-jerk/,['|Glutes|Lower Back|Adductors|Quads|Front Deltoid|'],['|Trapezius|Triceps|Lateral Deltoid|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/squat-jerk.gif?resize=600%2C600&ssl=1
+Split Jerk,https://www.strengthlog.com/split-jerk/,['|Front Deltoid|'],['|Quads|Glutes|Adductors|Lower Back|Trapezius|Triceps|Lateral Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/split-jerk.gif?resize=600%2C600&ssl=1
+Barbell Curl,https://www.strengthlog.com/barbell-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Barbell-biceps-curl.gif?resize=600%2C600&ssl=1
+Barbell Preacher Curl,https://www.strengthlog.com/barbell-preacher-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/preacher-curl-barbell.gif?resize=600%2C600&ssl=1
+Bayesian Curl,https://www.strengthlog.com/bayesian-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/11/Bayesian-curls.gif?resize=600%2C600&ssl=1
+Bodyweight Curl,https://www.strengthlog.com/bodyweight-curl/,['|Biceps|Lats|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/02/Bodyweight-curls.gif?resize=600%2C600&ssl=1
+Cable Crossover Bicep Curl,https://www.strengthlog.com/cable-crossover-bicep-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/11/bamsecurls.gif?resize=600%2C600&ssl=1
+Cable Curl With Bar,https://www.strengthlog.com/cable-curl-with-bar/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-curl-with-handle.gif?resize=600%2C600&ssl=1
+Cable Curl With Rope,https://www.strengthlog.com/cable-curl-with-rope/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-curl-with-rope.gif?resize=600%2C600&ssl=1
+Concentration Curl,https://www.strengthlog.com/concentration-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Concentration-curl.gif?resize=600%2C600&ssl=1
+Drag Curl,https://www.strengthlog.com/drag-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/drag-curl.gif?resize=600%2C600&ssl=1
+Dumbbell Curl,https://www.strengthlog.com/dumbbell-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Hantelcurl.gif?resize=600%2C600&ssl=1
+Dumbbell Preacher Curl,https://www.strengthlog.com/dumbbell-preacher-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Preacher-Curl.gif?resize=600%2C600&ssl=1
+Hammer Curl,https://www.strengthlog.com/hammer-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Hammer-curl.gif?resize=600%2C600&ssl=1
+Incline Dumbbell Curl,https://www.strengthlog.com/incline-dumbbell-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/Incline-Dumbbell-Curl.gif?resize=600%2C600&ssl=1
+Machine Bicep Curl,https://www.strengthlog.com/machine-bicep-curl/,['|Biceps|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Machine-biceps-curl.gif?resize=600%2C600&ssl=1
+Spider Curl,https://www.strengthlog.com/spider-curl/,,,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/09/spider-curl-does-whatever-a-spider-curl-does-2.gif?resize=600%2C600&ssl=1
+Barbell Standing Triceps Extension,https://www.strengthlog.com/barbell-standing-triceps-extension/,['|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Barbell-Standing-Triceps-Extension.gif?resize=600%2C600&ssl=1
+Barbell Lying Triceps Extension,https://www.strengthlog.com/barbell-lying-triceps-extension/,['|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Barbell-Lying-Tricep-Extension.gif?resize=600%2C600&ssl=1
+Bench Dip,https://www.strengthlog.com/bench-dip/,['|Triceps|'],['|Chest|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/12/C7251A7B-7A1B-47AE-A88C-7054692BCEF0.gif?resize=600%2C600&ssl=1
+Close-Grip Push-Up,https://www.strengthlog.com/close-grip-push-up/,['|Triceps|'],['|Abs|Chest|Front Deltoid|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/09/close-grip-push-up.gif?resize=600%2C600&ssl=1
+Dumbbell Lying Triceps Extension,https://www.strengthlog.com/dumbbell-lying-triceps-extension/,,,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/03/Lying-Dumbbell-Triceps-Extension-1.gif?resize=600%2C600&ssl=1
+Dumbbell Standing Triceps Extension,https://www.strengthlog.com/dumbbell-standing-triceps-extension/,['|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Standing-Triceps-Extension.gif?resize=600%2C600&ssl=1
+Overhead Cable Triceps Extension,https://www.strengthlog.com/overhead-cable-triceps-extension/,['|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/cable-rope-overhead-triceps-extension.gif?resize=600%2C652&ssl=1
+Tricep Bodyweight Extension,https://www.strengthlog.com/triceps-bodyweight-extension/,['|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/02/Bodyweight-triceps-extension.gif?resize=600%2C600&ssl=1
+Tricep Pushdown With Bar,https://www.strengthlog.com/tricep-pushdown-with-bar/,['|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/triceps-pushdown-with-straight-handle.gif?resize=600%2C600&ssl=1
+Tricep Pushdown With Rope,https://www.strengthlog.com/tricep-pushdown-with-rope/,['|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/triceps-pushdown-with-rope.gif?resize=600%2C600&ssl=1
+Air Squat,https://www.strengthlog.com/air-squat/,['|Quads|Glutes|Adductors|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Air-squat.gif?resize=600%2C600&ssl=1
+Barbell Hack Squat,https://www.strengthlog.com/barbell-hack-squat/,['|Quads|'],['|Glutes|Adductors|Lower Back|Trapezius|Forearm Flexors|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/04/Barbell-Hack-Squat-Exercise.gif?resize=600%2C600&ssl=1
+Barbell Lunge,https://www.strengthlog.com/barbell-lunge/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Barbell-Lunge.gif?resize=600%2C600&ssl=1
+Barbell Walking Lunge,https://www.strengthlog.com/barbell-walking-lunges/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/02/Barbell-walking-lunges.gif?resize=600%2C600&ssl=1
+Belt Squat,https://www.strengthlog.com/belt-squats/,['|Quads|Glutes|Adductors|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/belt-squat.gif?resize=600%2C600&ssl=1
+Body Weight Lunge,https://www.strengthlog.com/body-weight-lunge/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/09/Bodyweight-Lunge-exercise.gif?resize=600%2C600&ssl=1
+Bodyweight Leg Curl,https://www.strengthlog.com/bodyweight-leg-curl/,['|Hamstrings|'],['|Glutes|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/01/body-weight-leg-curl.gif?resize=600%2C600&ssl=1
+Box Jump,https://www.strengthlog.com/box-jump/,['|Quads|Glutes|Adductors|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/box-jump.gif?resize=600%2C600&ssl=1
+Box Squat,https://www.strengthlog.com/box-squat/,['|Quads|Glutes|Adductors|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/Box-Squat.gif?resize=600%2C600&ssl=1
+Bulgarian Split Squat,https://www.strengthlog.com/bulgarian-split-squat/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/02/Bulgarian-split-squat-barbell.gif?resize=600%2C600&ssl=1
+Chair Squat,https://www.strengthlog.com/chair-squats/,['|Quads|Glutes|Adductors|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/03/chair-squats.gif?resize=600%2C600&ssl=1
+Dumbbell Lunge,https://www.strengthlog.com/dumbbell-lunge/,['|Quads|Glutes|Adductors|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Lunge.gif?resize=600%2C600&ssl=1
+Dumbbell Squat,https://www.strengthlog.com/dumbbell-squat/,['|Quads|Glutes|Adductors|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/dumbbell-squat.gif?resize=600%2C600&ssl=1
+Front Squat,https://www.strengthlog.com/front-squat/,['|Quads|Glutes|Adductors|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/09/Front-squat.gif?resize=600%2C595&ssl=1
+Goblet Squat,https://www.strengthlog.com/goblet-squat/,['|Quads|Glutes|Adductors|'],['|Lower Back|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Goblet-squat.gif?resize=600%2C600&ssl=1
+Hack Squat Machine,https://www.strengthlog.com/hack-squat-machine/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/hack-squat-machine.gif?resize=600%2C600&ssl=1
+Half Air Squat,https://www.strengthlog.com/half-body-weight-squats/,['|Quads|Glutes|Adductors|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/03/half-air-squats.gif?resize=600%2C600&ssl=1
+Hip Adduction Machine,https://www.strengthlog.com/hip-adduction-machine/,['|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/hip-adduction-machine.gif?resize=600%2C600&ssl=1
+Jumping Lunge,https://www.strengthlog.com/jumping-lunges/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/01/jumping-lunges.gif?resize=600%2C600&ssl=1
+Landmine Hack Squat,https://www.strengthlog.com/landmine-hack-squat/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/04/Landmine-Hack-Squat-Exercise.gif?resize=600%2C600&ssl=1
+Landmine Squat,https://www.strengthlog.com/landmine-squat/,['|Quads|Glutes|Adductors|'],['|Lower Back|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/04/Landmine-Squat-Exercise.gif?resize=600%2C600&ssl=1
+Leg Curl On Ball,https://www.strengthlog.com/leg-curl-on-ball/,['|Hamstrings|'],['|Glutes|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/Leg-curl-on-ball.gif?resize=600%2C600&ssl=1
+Leg Extension,https://www.strengthlog.com/leg-extension/,['|Quads|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/leg-extension-seated.gif?resize=600%2C600&ssl=1
+Leg Press,https://www.strengthlog.com/leg-press/,['|Quads|Glutes|Adductors|'],['|Hamstrings|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/leg-press.gif?resize=600%2C600&ssl=1
+Lying Leg Curl,https://www.strengthlog.com/lying-leg-curl/,['|Hamstrings|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/leg-curl-lying.gif?resize=600%2C600&ssl=1
+Nordic Hamstring Eccentric,https://www.strengthlog.com/nordic-hamstring-eccentric/,['|Hamstrings|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/nordic-hamstrings-eccentric.gif?resize=600%2C600&ssl=1
+Pause Squat,https://www.strengthlog.com/pause-squat/,['|Quads|Glutes|Adductors|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/Pause-squat.gif?resize=600%2C600&ssl=1
+Reverse Barbell Lunge,https://www.strengthlog.com/reverse-barbell-lunge/,['|Adductors|Quads|Glutes|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/reverse-barbell-lunge.gif?resize=600%2C600&ssl=1
+Romanian Deadlift,https://www.strengthlog.com/romanian-deadlift/,['|Glutes|Lower Back|Hamstrings|'],['|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/01/Romanian-deadlift.gif?resize=600%2C600&ssl=1
+Safety Bar Squat,https://www.strengthlog.com/safety-bar-squat/,['|Quads|Glutes|Adductors|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/11/safetybar-squat.gif?resize=600%2C600&ssl=1
+Seated Leg Curl,https://www.strengthlog.com/seated-leg-curl/,['|Hamstrings|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/leg-curl-seated.gif?resize=600%2C600&ssl=1
+Shallow Body Weight Lunge,https://www.strengthlog.com/shallow-lunges-bodyweight/,['|Quads|Glutes|Adductors|'],['|Hamstrings|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/03/shallow-lunges-bw.gif?resize=600%2C600&ssl=1
+Side Lunges (Bodyweight),https://www.strengthlog.com/side-lunges-bodyweight/,,,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/06/Side-lunges.gif?resize=566%2C566&ssl=1
+Smith Machine Bulgarian Split Squat,https://www.strengthlog.com/smith-machine-bulgarian-split-squat/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/11/smith-machine-bss.gif?resize=600%2C600&ssl=1
+Smith Machine Squat,https://www.strengthlog.com/smith-machine-squat/,['|Quads|Glutes|Adductors|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/smith-machine-squat.gif?resize=600%2C600&ssl=1
+Squat,https://www.strengthlog.com/squat/,['|Quads|Adductors|Glutes|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/11/squat.gif?resize=600%2C600&ssl=1
+Step Up,https://www.strengthlog.com/step-up/,,,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/03/step-up-exercise.gif?resize=600%2C600&ssl=1
+Zercher Squat,https://www.strengthlog.com/zercher-squat/,['|Quads|Glutes|Adductors|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/11/zercher-squat.gif?resize=600%2C600&ssl=1
+Zombie Squat,https://www.strengthlog.com/zombie-squat/,['|Quads|Glutes|Adductors|Lower Back|'],['|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/zombie-squat.gif?resize=600%2C600&ssl=1
+Assisted Chin-Up,https://www.strengthlog.com/assisted-chin-up/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/assisterade-chins-med-omvant-grepp.gif?resize=600%2C600&ssl=1
+Assisted Pull-Up,https://www.strengthlog.com/assisted-pull-up/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/assisterade-chins.gif?resize=600%2C600&ssl=1
+Back Extension,https://www.strengthlog.com/back-extension/,['|Glutes|Lower Back|'],['|Hamstrings|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/05/back-extension-frontloaded.gif?resize=600%2C600&ssl=1
+Banded Muscle-Up,https://www.strengthlog.com/banded-muscle-up/,['|Chest|Lats|Triceps|'],['|Biceps|Forearm Flexors|Front Deltoid|Rear Deltoids|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/Banded-Muscle-Up.gif?resize=600%2C600&ssl=1
+Barbell Row,https://www.strengthlog.com/barbell-row/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Lower Back|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/03/Barbell-Row.gif?resize=600%2C600&ssl=1
+Barbell Shrug,https://www.strengthlog.com/barbell-shrug/,['|Trapezius|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Barbell-Shrug.gif?resize=600%2C600&ssl=1
+Block Clean,https://www.strengthlog.com/block-clean/,['|Glutes|Lower Back|Adductors|Quads|'],['|Hamstrings|Trapezius|Forearm Flexors|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/block-clean.gif?resize=600%2C600&ssl=1
+Block Snatch,https://www.strengthlog.com/block-snatch/,['|Glutes|Lower Back|Adductors|Quads|'],['|Hamstrings|Trapezius|Calves|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/block-snatch.gif?resize=600%2C600&ssl=1
+Cable Close Grip Seated Row,https://www.strengthlog.com/cable-close-grip-seated-row/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-row-seated-narrow-grip.gif?resize=600%2C600&ssl=1
+Cable Wide Grip Seated Row,https://www.strengthlog.com/cable-wide-grip-seated-row/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-row-seated-wide-grip.gif?resize=600%2C600&ssl=1
+Chest to Bar,https://www.strengthlog.com/chest-to-bar/,['|Lats|'],['|Rear Deltoids|Biceps|Rotator Cuff|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/chest-to-bar.gif?resize=600%2C600&ssl=1
+Chin-Up,https://www.strengthlog.com/chin-up/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/chin-up.gif?resize=600%2C600&ssl=1
+Clean,https://www.strengthlog.com/clean/,['|Glutes|Lower Back|Adductors|Quads|'],['|Hamstrings|Trapezius|Forearm Flexors|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/clean.gif?resize=600%2C600&ssl=1
+Clean and Jerk,https://www.strengthlog.com/clean-and-jerk/,['|Glutes|Lower Back|Adductors|Quads|Front Deltoid|'],['|Hamstrings|Trapezius|Forearm Flexors|Triceps|Lateral Deltoid|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/clean-and-jerk.gif?resize=600%2C600&ssl=1
+Deadlift,https://www.strengthlog.com/deadlift/,['|Glutes|Lower Back|'],['|Quads|Hamstrings|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/11/Deadlift.gif?resize=600%2C600&ssl=1
+Deficit Deadlift,https://www.strengthlog.com/deficit-deadlift/,['|Glutes|Lower Back|'],['|Quads|Hamstrings|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Defifict-deadlift.gif?resize=600%2C600&ssl=1
+Dumbbell Deadlift,https://www.strengthlog.com/dumbbell-deadlift/,['|Glutes|Lower Back|'],['|Quads|Hamstrings|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/dumbbell-deadlift.gif?resize=600%2C600&ssl=1
+Dumbbell Row,https://www.strengthlog.com/dumbbell-row/,,['|Biceps|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Row.gif?resize=600%2C600&ssl=1
+Dumbbell Shrug,https://www.strengthlog.com/dumbbell-shrug/,['|Trapezius|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Shrug.gif?resize=600%2C600&ssl=1
+Floor Back Extension,https://www.strengthlog.com/floor-back-extension/,['|Lower Back|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/03/floor-back-extension.gif?resize=600%2C600&ssl=1
+Good Morning,https://www.strengthlog.com/good-morning/,['|Glutes|Lower Back|Hamstrings|'],['|Adductors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Good-morning.gif?resize=600%2C600&ssl=1
+Gorilla Row,https://www.strengthlog.com/gorilla-row/,['|Lats|Trapezius|Rotator Cuff|'],['|Biceps|Forearm Flexors|Rear Deltoids|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/11/gorilla-row-dumbbells.gif?resize=600%2C600&ssl=1
+Hang Clean,https://www.strengthlog.com/hang-clean/,['|Glutes|Lower Back|Adductors|Quads|'],['|Hamstrings|Trapezius|Forearm Flexors|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/hang-clean.gif?resize=600%2C600&ssl=1
+Hang Power Clean,https://www.strengthlog.com/hang-power-clean/,['|Glutes|Lower Back|'],['|Adductors|Hamstrings|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/hang-power-clean.gif?resize=600%2C600&ssl=1
+Hang Power Snatch,https://www.strengthlog.com/hang-power-snatch/,['|Glutes|Lower Back|'],['|Adductors|Hamstrings|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/hang-power-snatch.gif?resize=600%2C600&ssl=1
+Hang Snatch,https://www.strengthlog.com/hang-snatch/,['|Glutes|Lower Back|Adductors|Quads|'],['|Hamstrings|Trapezius|Forearm Flexors|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/hang-snatch.gif?resize=600%2C600&ssl=1
+Inverted Row,https://www.strengthlog.com/inverted-row/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/hangande-rodd-overhandsgrepp.gif?resize=600%2C600&ssl=1
+Inverted Row with Underhand Grip,https://www.strengthlog.com/inverted-row-with-underhand-grip/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/03/inverted-row-with-underhand-grip-new.gif?resize=600%2C600&ssl=1
+Jefferson Curl,https://www.strengthlog.com/jefferson-curl/,['|Lower Back|'],['|Adductors|Glutes|Hamstrings|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/09/Jefferson-Curl.gif?resize=576%2C1024&ssl=1
+Jumping Muscle-Up,https://www.strengthlog.com/jumping-muscle-up/,['|Chest|Lats|Triceps|'],['|Biceps|Forearm Flexors|Front Deltoid|Rear Deltoids|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/03/jumping-ring-muscle-up.gif?resize=600%2C600&ssl=1
+Kettlebell Swing,https://www.strengthlog.com/kettlebell-swing/,['|Glutes|Lower Back|'],['|Hamstrings|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Kettlebellsving.gif?resize=600%2C600&ssl=1
+Lat Pulldown With Pronated Grip,https://www.strengthlog.com/lat-pulldown-with-pronated-grip/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/lat-pulldown-with-pronated-grip.gif?resize=600%2C600&ssl=1
+Lat Pulldown With Supinated Grip,https://www.strengthlog.com/lat-pulldown-with-supinated-grip/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/lat-pulldown-with-supinated-grip.gif?resize=600%2C600&ssl=1
+Muscle-Up (Bar),https://www.strengthlog.com/bar-muscle-up/,['|Chest|Lats|Triceps|'],['|Biceps|Forearm Flexors|Front Deltoid|Rear Deltoids|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/Bar-Muscle-Up.gif?resize=600%2C600&ssl=1
+Muscle-Up (Rings),https://www.strengthlog.com/ring-muscle-up/,['|Chest|Lats|Triceps|'],['|Biceps|Forearm Flexors|Front Deltoid|Rear Deltoids|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/03/ring-muscle-up.gif?resize=600%2C600&ssl=1
+One-Handed Cable Row,https://www.strengthlog.com/one-handed-cable-row/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/cable-row-seated-single-arm.gif?resize=600%2C600&ssl=1
+One-Handed Lat Pulldown,https://www.strengthlog.com/one-handed-lat-pulldown/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/lat-pulldown-single-arm.gif?resize=600%2C600&ssl=1
+Pause Deadlift,https://www.strengthlog.com/pause-deadlift/,['|Glutes|Lower Back|'],['|Quads|Hamstrings|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Pause-deadlift.gif?resize=600%2C600&ssl=1
+Pendlay Row,https://www.strengthlog.com/pendlay-row/,,['|Biceps|Lower Back|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/pendlay-row.gif?resize=600%2C600&ssl=1
+Power Clean,https://www.strengthlog.com/power-clean/,['|Glutes|Lower Back|'],['|Quads|Adductors|Hamstrings|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/power-clean.gif?resize=600%2C600&ssl=1
+Power Snatch,https://www.strengthlog.com/power-snatch/,['|Glutes|Lower Back|'],['|Quads|Adductors|Hamstrings|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/power-snatch.gif?resize=600%2C600&ssl=1
+Pull-Up,https://www.strengthlog.com/pull-up/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/pull-up.gif?resize=600%2C600&ssl=1
+Pull-Up With a Neutral Grip,https://www.strengthlog.com/pull-ups-with-a-neutral-grip/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/chins-neutralt-grepp.gif?resize=600%2C600&ssl=1
+Rack Pull,https://www.strengthlog.com/rack-pull/,['GlutesLower Back'],['HamstringsAdductorsTrapeziusForearm Flexors'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Rack-pull.gif?resize=600%2C600&ssl=1
+Ring Pull-Up,https://www.strengthlog.com/ring-pull-up/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/03/ring-pullups.gif?resize=600%2C600&ssl=1
+Ring Row,https://www.strengthlog.com/ring-row/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/ring-rows.gif?resize=600%2C600&ssl=1
+Scap Pull-Up,https://www.strengthlog.com/scap-pull-up/,['|Rotator Cuff|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/scap-pull-ups.gif?resize=600%2C600&ssl=1
+Seal Row,https://www.strengthlog.com/seal-row/,,['|Biceps|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/seal-row.gif?resize=600%2C600&ssl=1
+Seated Machine Row,https://www.strengthlog.com/seated-machine-row/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/seated-machine-row.gif?resize=600%2C600&ssl=1
+Single Leg Deadlift with Kettlebell,https://www.strengthlog.com/single-leg-deadlift-with-kettlebell/,['|Glutes|Hamstrings|Lower Back|'],['|Abductors|Adductors|Forearm Flexors|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/single-leg-deadlift-with-kettlebell.gif?resize=600%2C600&ssl=1
+Snatch,https://www.strengthlog.com/snatch/,['|Glutes|Lower Back|Adductors|Quads|'],['|Hamstrings|Trapezius|Forearm Flexors|Calves|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/snatch.gif?resize=600%2C600&ssl=1
+Snatch Grip Deadlift,https://www.strengthlog.com/snatch-grip-deadlift/,['|Glutes|Lower Back|'],['|Quads|Hamstrings|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/snatch-deadlift.gif?resize=600%2C600&ssl=1
+Stiff-Legged Deadlift,https://www.strengthlog.com/stiff-legged-deadlift/,['|Glutes|Lower Back|Hamstrings|'],['|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/10/stiff-leg-deadlifts.gif?resize=600%2C600&ssl=1
+Straight Arm Lat Pulldown,https://www.strengthlog.com/straight-arm-lat-pulldown/,['|Lats|'],['|Rear Deltoids|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Straight-arm-lat-pulldown.gif?resize=600%2C600&ssl=1
+Sumo Deadlift,https://www.strengthlog.com/sumo-deadlift/,['|Glutes|Lower Back|'],['|Quads|Hamstrings|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/Sumo-deadlift.gif?resize=600%2C600&ssl=1
+T-Bar Row,https://www.strengthlog.com/t-bar-row/,['|Lats|Trapezius|Rear Deltoids|'],['|Biceps|Lower Back|Forearm Flexors|Rotator Cuff|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/t-bar-row-machine.gif?resize=600%2C600&ssl=1
+Trap Bar Deadlift With High Handles,https://www.strengthlog.com/trap-bar-deadlift-with-high-handles/,['|Glutes|Lower Back|Quads|'],['|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Trap-Bar-Deadlift-With-High-Handles.gif?resize=600%2C600&ssl=1
+Trap Bar Deadlift With Low Handles,https://www.strengthlog.com/trap-bar-deadlift-with-low-handles/,['|Glutes|Lower Back|Quads|'],['|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Trap-Bar-Deadlift-With-Low-Handles.gif?resize=600%2C600&ssl=1
+Banded Side Kicks,https://www.strengthlog.com/banded-side-kick/,['|Abductors|'],['|Glutes|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Banded-Side-Kick.gif?resize=600%2C600&ssl=1
+Cable Pull Through,https://www.strengthlog.com/cable-pull-through/,['|Glutes|'],['|Lower Back|Hamstrings|Adductors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/cable-pull-through.gif?resize=600%2C600&ssl=1
+Clamshells,https://www.strengthlog.com/clamshells/,['|Abductors|'],['|Glutes|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/01/clamshell.gif?resize=600%2C600&ssl=1
+Cossack Squat,https://www.strengthlog.com/cossack-squat/,['|Glutes |Quads|'],['|Hamstrings|Adductors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/cossack-squat.gif?resize=600%2C600&ssl=1
+Death March with Dumbbells,https://www.strengthlog.com/death-march-with-dumbbells/,['|Glutes|Hamstrings|Lower Back|'],['|Adductors|Forearm Flexors|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/dumbbell-deathmarch.gif?resize=600%2C600&ssl=1
+Dumbbell Romanian Deadlift,https://www.strengthlog.com/dumbbell-romanian-deadlift/,['|Glutes|Lower Back|Hamstrings|'],['|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/09/romanian-deadlift-with-dumbbells.gif?resize=600%2C600&ssl=1
+Dumbbell Frog Pumps,https://www.strengthlog.com/dumbbell-frog-pumps/,['|Glutes|'],['|Hamstrings|Adductors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Dumbbell-frog-pump.gif?resize=600%2C600&ssl=1
+Fire Hydrants,https://www.strengthlog.com/fire-hydrants/,"['', '|Glutes|']",,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/06/Fire-Hydrants.gif?resize=510%2C510&ssl=1
+Frog Pumps,https://www.strengthlog.com/frog-pumps/,['|Glutes|'],['|Hamstrings|Adductors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Frog-pump.gif?resize=600%2C600&ssl=1
+Glute Bridge,https://www.strengthlog.com/glute-bridge/,['|Glutes|'],['|Quads|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/06/Glute-Bridge.gif?resize=522%2C522&ssl=1
+Hip Abduction Against Band,https://www.strengthlog.com/hip-abduction-against-band/,['|Abductors|'],['|Glutes|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Band-Seated-Hip-Abduction.gif?resize=600%2C600&ssl=1
+Hip Abduction Machine,https://www.strengthlog.com/hip-abduction-machine/,['|Abductors|'],['|Glutes|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/hip-abduction-machine.gif?resize=600%2C600&ssl=1
+Hip Thrust,https://www.strengthlog.com/hip-thrust/,['|Glutes|'],['|Adductors|Quads|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Hip-thrust.gif?resize=600%2C600&ssl=1
+Hip Thrust Machine,https://www.strengthlog.com/hip-thrust-machine/,['|Glutes|'],['|Adductors|Quads|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/hip-thrust-machine.gif?resize=600%2C600&ssl=1
+Hip Thrust With Band Around Knees,https://www.strengthlog.com/hip-thrust-with-band-around-knees/,['|Glutes|'],['|Adductors|Abductors|Quads|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Hip-thrust-with-band-around-knees.gif?resize=600%2C600&ssl=1
+Lateral Walk With Band,https://www.strengthlog.com/lateral-walk-with-band/,['|Abductors|'],['|Glutes|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Banded-Side-Step.gif?resize=600%2C600&ssl=1
+Machine Glute Kickbacks,https://www.strengthlog.com/machine-glute-kickbacks/,,['|Hamstrings|Adductors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/machine-glute-kickback.gif?resize=600%2C600&ssl=1
+One-Legged Glute Bridge,https://www.strengthlog.com/one-legged-glute-bridge/,['|Glutes|'],['|Adductors|Abductors|Quads|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/09/One-legged-glute-bridge.gif?resize=600%2C600&ssl=1
+One-Legged Hip Thrust ,https://www.strengthlog.com/one-legged-hip-thrust/,['|Glutes|'],['|Adductors|Abductors|Quads|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/06/One-Legged-Hip-Thrust.gif?resize=600%2C600&ssl=1
+Reverse Hyperextension,https://www.strengthlog.com/reverse-hyperextension/,['|Glutes|Hamstrings|Lower back|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/reverse-hyperextension.gif?resize=600%2C600&ssl=1
+Single Leg Romanian Deadlift,https://www.strengthlog.com/single-leg-romanian-deadlift/,['|Glutes|Lower Back|Hamstrings|'],['|Adductors|Trapezius|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Single-leg-romanian-deadlift.gif?resize=600%2C600&ssl=1
+Standing Glute Kickback in Machine,https://www.strengthlog.com/standing-glute-kickback-in-machine/,,['|Hamstrings|Adductors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Standing-glute-kickback-in-machine-1.gif?resize=600%2C600&ssl=1
+Ball Slams,https://www.strengthlog.com/ball-slams/,['|Lats|Abs|Obliques|'],['|Glutes|Front Deltoids|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/slam-ball.gif?resize=600%2C600&ssl=1
+Cable Crunch,https://www.strengthlog.com/cable-crunch/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/cable-crunch.gif?resize=600%2C600&ssl=1
+Crunch,https://www.strengthlog.com/crunch/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Crunch.gif?resize=600%2C600&ssl=1
+Dead Bug,https://www.strengthlog.com/dead-bugs/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/deadbug.gif?resize=600%2C600&ssl=1
+Hanging Knee Raise,https://www.strengthlog.com/hanging-knee-raise/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/hanging-knee-raise.gif?resize=600%2C600&ssl=1
+Hanging Leg Raise,https://www.strengthlog.com/hanging-leg-raise/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/hanging-leg-raise.gif?resize=600%2C600&ssl=1
+Hanging Sit-Up,https://www.strengthlog.com/hanging-sit-up/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/hanging-sit-up.gif?resize=600%2C600&ssl=1
+Hanging Windshield Wiper,https://www.strengthlog.com/hanging-windshield-wiper/,['|Obliques|Abs|'],['|Forearm Flexors|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/11/hanging-windshield-wiper.gif?resize=600%2C600&ssl=1
+High to Low Wood Chop with Band,https://www.strengthlog.com/high-to-low-wood-chop-with-band/,['|Obliques|'],['|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Band-Wood-Chop-High-to-Low.gif?resize=600%2C600&ssl=1
+Horizontal Wood Chop with Band,https://www.strengthlog.com/horizontal-wood-chop-with-band/,['|Obliques|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Band-Wood-Chop-Horizontal.gif?resize=600%2C600&ssl=1
+Kneeling Ab Wheel Roll-Out,https://www.strengthlog.com/kneeling-ab-wheel-roll-out/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/05/kneeling-ab-wheel.gif?resize=600%2C600&ssl=1
+Kneeling Plank,https://www.strengthlog.com/kneeling-plank,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/knastaende-planka.jpg?resize=700%2C700&ssl=1
+Kneeling Side Plank,https://www.strengthlog.com/kneeling-side-plank/,['|Obliques|'],['|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/Kneeling-side-plank.jpg?resize=700%2C700&ssl=1
+Lying Leg Raise,https://www.strengthlog.com/lying-leg-raise/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/lying-leg-raises.gif?resize=600%2C600&ssl=1
+Lying Windshield Wiper,https://www.strengthlog.com/lying-windshield-wiper/,['|Obliques|'],['|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Lying-Windshield-Wipers-1.gif?resize=600%2C600&ssl=1
+Lying Windshield Wiper with Bent Knees,https://www.strengthlog.com/lying-windshield-wiper-with-bent-knees/,['|Obliques|'],['|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Lying-Windshield-Wipers-with-Bent-Knees.gif?resize=600%2C600&ssl=1
+Machine Crunch,https://www.strengthlog.com/machine-crunch/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/machine-crunch.gif?resize=600%2C600&ssl=1
+Mountain Climbers,https://www.strengthlog.com/mountain-climbers/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Mountain-climbers.gif?resize=600%2C600&ssl=1
+Oblique Crunch,https://www.strengthlog.com/oblique-crunch/,['|Obliques|'],['|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Oblique-crunch.gif?resize=600%2C600&ssl=1
+Oblique Sit-Up,https://www.strengthlog.com/oblique-sit-up/,['|Obliques|'],['|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Oblique-sit-up.gif?resize=600%2C600&ssl=1
+Plank,https://www.strengthlog.com/plank/,['|Abs|'],['|Obliques|'],https://i2.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Plank.jpg?fit=1024%2C1024&ssl=1
+Plank with Leg Lifts,https://www.strengthlog.com/plank-with-leg-lifts/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/02/plank-with-leglift.gif?resize=600%2C600&ssl=1
+Russian Twist,https://www.strengthlog.com/russian-twist/,['|Obliques|Abs|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/11/russian-twist.gif?resize=600%2C600&ssl=1
+Side Plank,https://www.strengthlog.com/side-plank/,['|Obliques|'],['|Abs|'],https://i1.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Side-plank.jpg?fit=1024%2C1024&ssl=1
+Sit-Up,https://www.strengthlog.com/sit-up/,['|Abs|'],['|Obliques|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Sit-up.gif?resize=600%2C600&ssl=1
+Barbell Standing Calf Raise,https://www.strengthlog.com/barbell-standing-calf-raise/,['|Calves|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/barbell-standing-calf-raise-2.gif?resize=600%2C600&ssl=1
+Eccentric Heel Drop,https://www.strengthlog.com/eccentric-heel-drop/,['|Calves|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/11/Eccentric-heel-raise.gif?resize=600%2C600&ssl=1
+Heel Raise,https://www.strengthlog.com/heel-raise/,"['|Calves|', '']",,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/11/Heel-raise.gif?resize=600%2C600&ssl=1
+Seated Calf Raise,https://www.strengthlog.com/seated-calf-raise/,['|Calves|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/calf-raise-seated.gif?resize=600%2C600&ssl=1
+Standing Calf Raise,https://www.strengthlog.com/standing-calf-raise/,['|Calves|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/calf-raise-standing.gif?resize=600%2C600&ssl=1
+Barbell Wrist Curl,https://www.strengthlog.com/barbell-wrist-curl/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Barbell-Wrist-Curl.gif?resize=600%2C600&ssl=1
+Barbell Wrist Curl Behind the Back,https://www.strengthlog.com/barbell-wrist-curl-behind-the-back/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Barbell-Wrist-Curl-Behind-the-Back.gif?resize=600%2C600&ssl=1
+Bar Hang,https://www.strengthlog.com/bar-hang/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Two-handed-hang-for-time.gif?resize=600%2C646&ssl=1
+Dumbbell Wrist Curl,https://www.strengthlog.com/dumbbell-wrist-curl/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Dumbbell-Wrist-Curl.gif?resize=600%2C600&ssl=1
+Farmers Walk,https://www.strengthlog.com/farmers-walk/,['|Forearm Flexors|Obliques|Glutes|Trapezius|'],['|Quads|Abs|Lower Back|Calves|Lateral Deltoids|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Farmers-walk.gif?resize=600%2C480&ssl=1
+Fat Bar Deadlift,https://www.strengthlog.com/fat-bar-deadlift/,['|Glutes|Forearm Flexors|Lower Back|'],['|Quads|Hamstrings|Adductors|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Fat-Bar-Deadlift.gif?resize=600%2C599&ssl=1
+Gripper,https://www.strengthlog.com/gripper/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Gripper-1.gif?resize=600%2C600&ssl=1
+One-Handed Bar Hang,https://www.strengthlog.com/one-handed-bar-hang/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/One-handed-hang-for-time-1.gif?resize=600%2C663&ssl=1
+Plate Pinch,https://www.strengthlog.com/plate-pinch/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Plate-Pinch.gif?resize=600%2C600&ssl=1
+Plate Wrist Curl,https://www.strengthlog.com/plate-wrist-curl/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Plate-Wrist-Curl.gif?resize=600%2C600&ssl=1
+Towel Pull-Up,https://www.strengthlog.com/towel-pull-up/,,,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Towel-Pull-Up.gif?resize=600%2C710&ssl=1
+Wrist Roller,https://www.strengthlog.com/wrist-roller/,['|Forearm Flexors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/10/wrist-roller.gif?resize=600%2C600&ssl=1
+Barbell Wrist Extension,https://www.strengthlog.com/barbell-wrist-extension/,['|Forearm Extensors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Barbell-Wrist-Extension.gif?resize=600%2C600&ssl=1
+Dumbbell Wrist Extension,https://www.strengthlog.com/dumbbell-wrist-extension/,['|Forearm Extensors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Dumbbell-Wrist-Extension.gif?resize=600%2C600&ssl=1
+Rowing Machine,https://www.strengthlog.com/rowing-machine/,,,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/06/Rowing-machine-muscles-worked.jpg?fit=2247%2C1498&ssl=1
+Stationary Bike,https://www.strengthlog.com/stationary-bike/,,,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/06/Stationary-bike-workout-muscles.jpg?fit=2285%2C1524&ssl=1
+Bar Dips,https://www.strengthlog.com/bar-dip/,['|Chest|Front Deltoid|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Dips.gif?resize=600%2C600&ssl=1
+Reverse Dumbbell Fly,https://www.strengthlog.com/reverse-dumbbell-flyes/,['|Rear Deltoid|Rotator Cuff|'],['|Trapezius|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Reverse-dumbbell-flyes.gif?resize=600%2C600&ssl=1
+Lat Pulldown,https://www.strengthlog.com/lat-pulldown-with-pronated-grip/,['|Lats|'],['|Biceps|Rear Deltoids|Forearm Flexors|Rotator Cuffs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/lat-pulldown-with-pronated-grip.gif?resize=600%2C600&ssl=1
+Tricep Pushdown,https://www.strengthlog.com/tricep-pushdown-with-bar/,['|Triceps|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/triceps-pushdown-with-straight-handle.gif?resize=600%2C600&ssl=1
+Hack Squats,https://www.strengthlog.com/hack-squat-machine/,['|Quads|Glutes|Adductors|'],,https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/hack-squat-machine.gif?resize=600%2C600&ssl=1
+High to Low Wood Chop,https://www.strengthlog.com/high-to-low-wood-chop-with-band/,['|Obliques|'],['|Abs|'],https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/01/Band-Wood-Chop-High-to-Low.gif?resize=600%2C600&ssl=1
 
-●
-Abductors
-","
-Band Hip Abductions
-1
-",Beginner,"
-
-
-                Resistance Band
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Band_Hip_Abductions_Leg_Abductors_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Clam
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Clam_Abductor_Leg_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Fire Hydrant
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Fire_Hydrant_Leg_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Floor Abductor
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Floor_Abductor_Leg_Hip_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Hip Abduction Cable
-1
-",Beginner,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Hip_Abduction_Cable_Leg_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Hip Circles (Prone)
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Hip_Circles_Prone_Position_Abductors_Hip_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Iliotibial Tract-Smr
-1
-",Intermediate,"
-
-
-                Foam Roller
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Iliotibial_tract-SMR__IT_Band_Foam_Rolling_Stretching_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Side Leg Raise
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Side_Leg_Raise_Abductors_Hips_Leg_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Stability Ball Banded Pull-apart Pulses
-1
-",Beginner,"
-
-
-                Elastic Bands, Stability Ball
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Stability-Ball-Banded-Pull-apart-Pulses.gif
-"
-
-●
-Abductors
-","
-Standing Hip Circles
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Standing_Hip_Circles_Abductors_Leg_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Thigh Abductor
-1
-",Beginner,"
-
-
-                Machine
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Thigh_Abductor_Legs_Abductor_Exercise_Demo_How-to.gif
-"
-
-●
-Abductors
-","
-Windmills
-1
-",Intermediate,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Windmills_Legs_Abductor_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-3/4 Sit-Up
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/34_Situp_Ab_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Ab Rollouts
-1
-",Intermediate,"
-
-
-                Ab Wheel
-",https://cdn.fitsw.com/assets/img/exerciseGifs/AbRollouts.gif
-"
-
-●
-Abs
-","
-Alternate Heel Touchers
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Alternate_Heel_Touches_Core_Ab_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Alternating Abdominal Kick
-1
-",Intermediate,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Alternating_Abdominal_Kick_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Alternating Cable Twist
-1
-",Beginner,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Alternating_Cable_Twist_Standing_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Angled Side Bridge
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Angled_Side_Bridge_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Ball Side Bend
-1
-",Intermediate,"
-
-
-                Stability Ball
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Ball_Side_Bend_Abs_Core_Oblique_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Banded Hip Hinge Over the Shoulder Pull
-1
-",Beginner,"
-
-
-                Resistance Band
-",https://cdn.fitsw.com/assets/img/exerciseGifs/BandedHipHingePullResistance.gif
-"
-
-●
-Abs
-","
-Barbell Ab Rollout - On Knees
-1
-",Advanced,"
-
-
-                Barbell
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Barbell_Ab_Rollout-On_Knees_Ab_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Barbell Push Crunch
-1
-",Intermediate,"
-
-
-                Barbell
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Barbell_Push_Crunch_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Barbell Push Sit-up
-1
-",Advanced,"
-
-
-                Barbell
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Barbell_Push_Sit-up_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Barbell Rollout From Bench
-1
-",Intermediate,"
-
-
-                Barbell
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Barbell_Ab_Rollout_From_Bench_Abs_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Bent Knee Lying Twist
-1
-",Intermediate,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Bent_Knee_Lying_Twist_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Bent Knee Side Plank
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Bent_Knee_Side_Plank_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Bicycle Crunches
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Bicycle_Crunches_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Bird Dog
-1
-",Intermediate,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Bird_Dog_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Bosu Ball Cable Crunch With Side Bends
-1
-",Beginner,"
-
-
-                Bosu, Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Bosu_Ball_Cable_Crunch_with_Side_Bends_Abs_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Butt-Ups
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Butt-ups_Core_Ab_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cable Circles
-1
-",Intermediate,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Cable_Circles_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cable Kneeling Crunch
-1
-",Beginner,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Cable_Kneeling_Crunch_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cable Lying Crunch Stability Ball
-1
-",Beginner,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Cable_Lying_Crunch_Stability_Ball_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cable Lying Leg Hip Raise
-1
-",Intermediate,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Cable_Lying_Leg_Hip_Raise_Abs_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cable Oblique Twist
-1
-",Beginner,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Oblique_Twist__Wood_Chopper_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cable Reverse Crunch
-1
-",Beginner,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Cable_Reverse_Crunch_Core_Ab_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cable Seated Crunch
-1
-",Beginner,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Cable_Seated_Crunch_Abs_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cable Standing Crunch
-1
-",Beginner,"
-
-
-                Cable
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Cable_Standing_Crunch_Abdominals_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Cocoons
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Cocoons_Ab_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Crunch - Hands Overhead
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Crunch_Hands_Overhead_Core_Ab_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Crunch Arms Crossed
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Crunch_Arms_Crossed_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Crunch Arms Down
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Crunch_Arms_Down_Abs_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Crunch Up
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Crunch_Up_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Dead Bug
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Dead_Bug_Core_Ab_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Decline Oblique Twist
-1
-",Beginner,"
-
-
-                None
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Decline_Oblique_Twist_Abs_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Decline Sit-up
-1
-",Intermediate,"
-
-
-                Bench
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Decline_Sit-up_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Dumbbell 45 Degree Side Bend
-1
-",Beginner,"
-
-
-                Dumbbells
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Dumbbell_45_Degree_Side_Bend_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Dumbbell Push Crunch
-1
-",Intermediate,"
-
-
-                Dumbbells
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Dumbbell_Push_Crunch_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Dumbbell Push Sit-up
-1
-",Intermediate,"
-
-
-                Dumbbells
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Dumbbell_Push_Sit-up_Abs_Core_Exercise_Demo_How-to.gif
-"
-
-●
-Abs
-","
-Dumbbell Toe Touch Crunch
-1
-",Intermediate,"
-
-
-                Dumbbells
-",https://cdn.fitsw.com/assets/img/exerciseGifs/Dumbbell_Toe_Touch_Exercise_Demo_How-to.gif

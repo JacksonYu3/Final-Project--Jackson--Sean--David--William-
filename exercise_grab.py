@@ -1,39 +1,16 @@
-'''from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-import time
+import pandas as pd
+df = pd.read_csv("exerlist2.csv")
+def byName(name):
+    df_withname = df.loc[df['Name'] == name]
+    for i, r in df_withname.iterrows():
+        print(f"name: {r["Name"]}\nPrimary Muscles: {r["primary"]}\nSecondary Muscles: {r["secondary"]}")
+        #Can't display gifs yet so won't bother printing gif URL
+def byMusc(muscle):
+    df_muscle = df.loc[df['primary'].str.contains(muscle, na = False)]
+    #I used this https://www.geeksforgeeks.org/select-rows-that-contain-specific-text-using-pandas/
+    #and this https://stackoverflow.com/questions/66536221/getting-cannot-mask-with-non-boolean-array-containing-na-nan-values-but-the
+    #when I was getting errors
+    for i, r in df_muscle.iterrows():
+        print(f"name: {r["Name"]}\nPrimary Muscles: {r["primary"]}\nSecondary Muscles: {r["secondary"]}")
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
 
-driver.get("https://www.acefitness.org/resources/everyone/exercise-library")
-
-exlist = WebDriverWait(driver, 10).until(
-    EC.presence_of_element_located((By.CLASS_NAME, "grid-x grid-margin-x grid-margin-y small-up-2 bp600-up-3 medium-up-4"))
-    )  '''
-from bs4 import BeautifulSoup
-import requests
-import html5lib
-import csv
-
-source = requests.get("https://www.fitsw.com/exercise-list/").text
-soup = BeautifulSoup(source, "lxml")
-
-data_file = open("exerlist.csv", "w", newline = "", encoding = "utf-8")
-csv_writer = csv.writer(data_file)
-csv_writer.writerow(["Muscle Group", "Exercise Name", "Equipment", "Animation"])
-table_contents = soup.find("tbody")
-for i in table_contents.find_all("tr"):
-    row = i.find_all("td")
-    group = row[0].text
-    name = row[1].text
-    level = row[2].text
-    equipment = row[3].text
-    gif = row[5].span.get("data-preview-src")
-    csv_writer.writerow([group, name, level, equipment, gif])
-data_file.close()
