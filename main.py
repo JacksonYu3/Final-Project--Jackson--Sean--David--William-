@@ -18,6 +18,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
+path = r"C:\Users\billy\OneDrive\Documents\GitHub\Final-Project--Jackson--Sean--David--William-\bodies.webp"
+
 def byName(name):
     df_withname = df.loc[df['Name'] == name]
     for i, r in df_withname.iterrows():
@@ -62,7 +64,6 @@ def home_page():
 
 
 def go_to_exer():
-    home_frame.destroy()
     bodies_buttons()
 
 
@@ -74,19 +75,19 @@ def back_fun():
 
 #body part functions
 def shoulders_fun():
-    byMusc("shoulders")
+    byMusc("Deltoid")
     root.quit()
 def biceps_fun():
-    byMusc("biceps")
+    byMusc("Bicep")
     root.quit()
 def triceps_fun():
-    byMusc("triceps")
+    byMusc("Tricep")
     root.quit()
 def forearms_fun():
     byMusc("forearms")
     root.quit()
 def chest_fun():
-    byMusc("chest")
+    byMusc("Chest")
     root.quit()
 def back_fun():
     byMusc("back")
@@ -110,7 +111,7 @@ def bodies_buttons():
     width = root.winfo_screenwidth()
     height = root.winfo_screenheight()
     global image
-    image = ImageTk.PhotoImage(Image.open("C:\\Users\\Dan\\Documents\\GitHub\\Exercise Project\\Images\\bodies.webp"))
+    image = ImageTk.PhotoImage(Image.open(path))
     canvas = tk.Canvas(exer_frame)
     canvas.create_image(width / 2, height / 2, image=image, anchor="center")
 
