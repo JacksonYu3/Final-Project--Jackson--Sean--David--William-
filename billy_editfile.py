@@ -17,8 +17,23 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+import customtkinter as ctk
+import urllib
 
 path = r"C:\Users\billy\OneDrive\Documents\GitHub\Final-Project--Jackson--Sean--David--William-\bodies.webp"
+
+def show_gif(gifurl):
+    tertiary = tk.Toplevel(root)
+    urllib.request.urlretrieve(gifurl,"fluidurl.jpg")
+    image = Image.open("fluidurl.jpg")
+    image.show()
+    '''
+    canvas = tk.Canvas(tertiary)
+    image = Image.open("fluidurl.gif")
+    photo = ImageTk.PhotoImage(image, master = tertiary)
+    canvas.create_image(100,100, anchor = "center", image=photo)
+    canvas.image = photo
+    canvas.pack()'''
 
 def byName(name):
     df_withname = df.loc[df['Name'] == name]
@@ -35,16 +50,15 @@ def byMusc(muscle):
     secondary = tk.Toplevel(root)
     secondary.geometry("890x686")
     exercises = ""
+    exframe = ctk.CTkScrollableFrame(secondary, width = 890, height = 686, fg_color = "white")
+    #learned about this from here https://www.youtube.com/watch?v=Envp9yHb2Ho 
+    #https://github.com/TomSchimansky/CustomTkinter/wiki/CTkScrollableFrame
+    exframe.pack()
     for i, r in df_muscle.iterrows():
-        exercises += (f"name: {r['Name']}\nPrimary Muscles: {r['primary']}\nSecondary Muscles: {r['secondary']} \n\n")
-    extext = tk.Text(secondary)
-    scrollbar = tk.Scrollbar(secondary, orient = "vertical", command = extext.yview)
-    extext.insert(1.0, exercises)
-    extext.pack()
-    scrollbar.pack()
-
-    
-
+        tk.Label(exframe, text = f"name: {r['Name']}\nPrimary Muscles: {r['primary']}\nSecondary Muscles: {r['secondary']}", bg = "white").pack()
+        tk.Button(exframe, text = "       GIF       ", command = lambda r=r: show_gif(r["GIF url"])).pack()
+    #I used this to figure out an issue where the lambda function would call with the most recent row URL
+    #https://stackoverflow.com/questions/10865116/tkinter-creating-buttons-in-for-loop-passing-command-arguments 
 
 root = tk.Tk()
 root.title("Exercise App")
@@ -55,7 +69,6 @@ root.bind("<F11>", lambda event: root.attributes("-fullscreen", not root.attribu
 root.bind("<Escape>", lambda event: root.attributes("-fullscreen", False))
 home_frame = tk.Frame(root).pack()
 exer_frame = tk.Frame(root).pack()
-
 
 log_file = "exercise_log.csv"
 df = pd.read_csv("exerlist.csv")
@@ -79,9 +92,9 @@ def go_to_exer():
 
 
 #back button function
-def back_fun():
-    root.quit()
-    root = tk.Tk()
+def quit():
+    root.destroy()
+    root.mainloop()
 
 
 #body part functions
@@ -95,7 +108,7 @@ def triceps_fun():
     byMusc("Tricep")
     #root.quit()
 def forearms_fun():
-    byMusc("forearms")
+    byMusc("Forearms")
     #root.quit()
 def chest_fun():
     byMusc("Chest")
@@ -145,7 +158,7 @@ def bodies_buttons():
 
 
     #back button
-    exit_btn = tk.Button(exer_frame, text="Back")
+    exit_btn = tk.Button(exer_frame, text="Back", command=quit)
     exit_btn.place(x=50, y=50) #this should not lead to "back function" -- 
     #that function refers to back muscles, not returning to home page.
 
