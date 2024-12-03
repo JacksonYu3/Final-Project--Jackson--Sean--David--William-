@@ -18,7 +18,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
-path = r"C:\Users\billy\OneDrive\Documents\GitHub\Final-Project--Jackson--Sean--David--William-\bodies.webp"
+path = r"C:\Users\jacks\OneDrive\Documents\GitHub\Final-Project--Jackson--Sean--David--William-"
 
 def byName(name):
     df_withname = df.loc[df['Name'] == name]
@@ -59,13 +59,16 @@ def home_page():
     exercise_button.pack(pady=5)
 
 
-    tracker_button = tk.Button(home_frame, text="Past Exercises", font=50)
+    tracker_button = tk.Button(home_frame, text="Past Exercises", font=50, command=go_to_tracker)
     tracker_button.pack(pady=5)
 
 
 def go_to_exer():
     bodies_buttons()
 
+def go_to_tracker():
+    tracker_button()
+    
 
 #back button function
 def back_fun():
@@ -105,6 +108,39 @@ def calves_fun():
     byMusc("calves")
     root.quit()
 
+def tracker_button():
+    title_text = tk.Label(root, text="Past Exercise List", font=("Arial", 12,"bold"))
+    title_text.pack(pady=5)
+
+    label1 = tk.Label(root, text="Your past exercises: ")
+    label1.pack(pady=10)
+
+    show_past_button = tk.Button(root, text="Refresh/Show", command=lambda: view_exercises(data))
+    show_past_button.pack()
+
+    show_past = scrolledtext.ScrolledText(root, width=70, height=20)
+    show_past.pack(pady=10)
+
+    label2 = tk.Label(root, text="Add today's exercise!")
+    label2.pack(pady=10)
+
+    exercise_label = tk.Label(root, text="Name of exercise")
+    exercise_label.pack()
+    exercise_entry = tk.Entry(root, width=30)
+    exercise_entry.pack(pady=5)
+
+    weight_label = tk.Label(root, text="lbs")
+    weight_label.pack()
+    weight_entry = tk.Entry(root, width=30)
+    weight_entry.pack(pady=5)
+
+    reps_label = tk.Label(root, text="# of reps")
+    reps_label.pack()
+    reps_entry = tk.Entry(root, width=30)
+    reps_entry.pack(pady=5)
+
+    add_exercise_button = tk.Button(root, text="Add exercise!", command=lambda: add_exercise(data))
+    add_exercise_button.pack(pady=10)
 
 def bodies_buttons():
     #creates the image of the human bodies
@@ -164,6 +200,51 @@ def bodies_buttons():
     legs_btn1.place(x=9*width/32, y=500, anchor="e")
     legs_btn2.place(x=7*width/10, y=500, anchor="w")
     calves_btn.place(x=7*width/10, y=650, anchor="w")
+
+def load_data():
+    data = []
+    
+    with open(log_file, mode="r", newline='') as file:
+        reader = csv.DictReader(file)
+        data = list(reader) 
+    return data
+
+def save_data(data):
+    with open(log_file, mode="w", newline='') as file:
+        fieldnames = ["date", "exercise", "weight", "reps"]
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        
+        writer.writeheader()  
+        writer.writerows(data) 
+        
+def view_exercises(data):
+    show_past.delete("1.0", tk.END)
+    if not data:
+        print("No exercise logs found.")
+        return
+    
+    show_past.insert(tk.END, "Exercise Log:\n")
+    for entry in data:
+        show_past.insert(tk.END, f"Date: {entry['date']}, Exercise: {entry['exercise']}, "
+              f"Weight: {entry['weight']} lbs, Reps: {entry['reps']}\n")
+        
+def add_exercise(data):
+    exercise = exercise_entry.get()
+    weight = weight_entry.get()
+    reps = reps_entry.get()
+    date = datetime.now().strftime("%m-%d-%Y %I:%M %p")
+    
+    data.append({"date": date, "exercise": exercise, "weight": weight, "reps": reps})
+
+    save_data(data)
+    
+    show_past.insert(tk.END, f"\nRecorded {exercise}: {weight} lbs for {reps} reps on {date}\n") 
+    
+    exercise_entry.delete(0, tk.END)
+    weight_entry.delete(0, tk.END)
+    reps_entry.delete(0, tk.END)
+    
+data = load_data()
 
 
 home_page()
