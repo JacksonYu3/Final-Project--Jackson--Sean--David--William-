@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
 from datetime import datetime
-from PIL import ImageTk, Image
+import PySimpleGUI as sg
+from PIL import Image, ImageTk, ImageSequence
 import os
 import time
 import csv
@@ -23,7 +24,6 @@ import urllib
 path = r"C:\Users\billy\OneDrive\Documents\GitHub\Final-Project--Jackson--Sean--David--William-\bodies.webp"
 
 def show_gif(gifurl):
-    tertiary = tk.Toplevel(root)
     headers = {
     'User-Agent': 'Mozilla/5.0'
     }
@@ -37,15 +37,29 @@ def show_gif(gifurl):
     and instead using requests directly. They also said to use a Mozilla User-Agent
     https://stackoverflow.com/questions/42441211/python-urllib-error-httperror-http-error-404-not-found
     I used this to help me generate image from requests:
-    https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests'''
-    
+    https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests
+
     canvas = tk.Canvas(tertiary)
     tertiary.geometry("890x686")
-    image = Image.open("fluidurl.gif")
+    image = Image.open("fluidimage.gif")
     photo = ImageTk.PhotoImage(image, master = tertiary)
     canvas.create_image(600,600, anchor = "center", image=photo)
     canvas.image = photo
-    canvas.pack()
+    canvas.pack()'''
+    #This was not working, I had to look online for ways to display a gif in python
+    #I found this guide 
+    #https://www.blog.pythonlibrary.org/2023/12/05/viewing-an-animated-gif-with-python/
+    #this is the source for the following code
+    gif_filename = "fluidimage.gif"
+    layout = [[sg.Image(key='-IMAGE-')]]
+    window = sg.Window('Window', layout, element_justification='c', margins=(0,0), element_padding=(0,0), finalize=True)
+    interframe_duration = Image.open(gif_filename).info['duration']
+    while True:
+        for frame in ImageSequence.Iterator(Image.open(gif_filename)):
+            event, values = window.read(timeout=interframe_duration)
+            if event == sg.WIN_CLOSED:
+                exit(0)
+            window['-IMAGE-'].update(data=ImageTk.PhotoImage(frame) )
 
 def byName(name):
     df_withname = df.loc[df['Name'] == name]
