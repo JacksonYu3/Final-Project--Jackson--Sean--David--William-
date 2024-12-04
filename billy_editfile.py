@@ -24,16 +24,28 @@ path = r"C:\Users\billy\OneDrive\Documents\GitHub\Final-Project--Jackson--Sean--
 
 def show_gif(gifurl):
     tertiary = tk.Toplevel(root)
-    urllib.request.urlretrieve(gifurl,"fluidurl.jpg")
-    image = Image.open("fluidurl.jpg")
-    image.show()
-    '''
+    headers = {
+    'User-Agent': 'Mozilla/5.0'
+    }
+    request = requests.get(gifurl, headers = headers)
+    if request.status_code == 200:
+        with open("fluidimage.gif", 'wb') as f:
+            for chunk in request.iter_content(1024):
+                f.write(chunk)
+    '''Trying to use urllib kept not working. I looked online for why this was the case, and couldn't
+    get an exact answer. But I did hear people saying that I should solve this by not using urllib
+    and instead using requests directly. They also said to use a Mozilla User-Agent
+    https://stackoverflow.com/questions/42441211/python-urllib-error-httperror-http-error-404-not-found
+    I used this to help me generate image from requests:
+    https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests'''
+    
     canvas = tk.Canvas(tertiary)
+    tertiary.geometry("890x686")
     image = Image.open("fluidurl.gif")
     photo = ImageTk.PhotoImage(image, master = tertiary)
-    canvas.create_image(100,100, anchor = "center", image=photo)
+    canvas.create_image(600,600, anchor = "center", image=photo)
     canvas.image = photo
-    canvas.pack()'''
+    canvas.pack()
 
 def byName(name):
     df_withname = df.loc[df['Name'] == name]
