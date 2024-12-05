@@ -166,37 +166,40 @@ def calves_fun():
 
 def tracker_button():
     title_text = tk.Label(root, text="Past Exercise List", font=("Arial", 12,"bold"))
-    title_text.pack(pady=5)
+title_text.pack(pady=5)
 
-    label1 = tk.Label(root, text="Your past exercises: ")
-    label1.pack(pady=10)
+label1 = tk.Label(root, text="Your past exercises: ")
+label1.pack(pady=10)
 
-    show_past_button = tk.Button(root, text="Refresh/Show", command=lambda: view_exercises(data))
-    show_past_button.pack()
+show_past_button = tk.Button(root, text="Refresh/Show", command=lambda: view_exercises(data))
+show_past_button.pack()
 
-    show_past = scrolledtext.ScrolledText(root, width=70, height=20)
-    show_past.pack(pady=10)
+show_past = scrolledtext.ScrolledText(root, width=70, height=20)
+show_past.pack(pady=10)
 
-    label2 = tk.Label(root, text="Add today's exercise!")
-    label2.pack(pady=10)
+label2 = tk.Label(root, text="Add today's exercise!")
+label2.pack(pady=10)
 
-    exercise_label = tk.Label(root, text="Name of exercise")
-    exercise_label.pack()
-    exercise_entry = tk.Entry(root, width=30)
-    exercise_entry.pack(pady=5)
+exercise_label = tk.Label(root, text="Name of exercise")
+exercise_label.pack()
+exercise_entry = tk.Entry(root, width=30)
+exercise_entry.pack(pady=5)
 
-    weight_label = tk.Label(root, text="lbs")
-    weight_label.pack()
-    weight_entry = tk.Entry(root, width=30)
-    weight_entry.pack(pady=5)
+weight_label = tk.Label(root, text="lbs")
+weight_label.pack()
+weight_entry = tk.Entry(root, width=30)
+weight_entry.pack(pady=5)
 
-    reps_label = tk.Label(root, text="# of reps")
-    reps_label.pack()
-    reps_entry = tk.Entry(root, width=30)
-    reps_entry.pack(pady=5)
+reps_label = tk.Label(root, text="# of reps")
+reps_label.pack()
+reps_entry = tk.Entry(root, width=30)
+reps_entry.pack(pady=5)
 
-    add_exercise_button = tk.Button(root, text="Add exercise!", command=lambda: add_exercise(data))
-    add_exercise_button.pack(pady=10)
+add_exercise_button = tk.Button(root, text="Add exercise!", command=lambda: add_exercise(data))
+add_exercise_button.pack(pady=10)
+
+view_progress_button = tk.Button(root, text="View Progress", command=open_popup_window1)
+view_progress_button.pack(pady=10)
 
 def bodies_buttons():
     #creates the image of the human bodies
@@ -292,7 +295,7 @@ def view_exercises(data):
               f"Weight: {entry['weight']} lbs, Reps: {entry['reps']}\n")
         
 def add_exercise(data):
-    exercise = exercise_entry.get()
+    exercise = exercise_entry.get().lower()
     weight = weight_entry.get()
     reps = reps_entry.get()
     date = datetime.now().strftime("%m-%d-%Y %I:%M %p")
@@ -306,6 +309,65 @@ def add_exercise(data):
     exercise_entry.delete(0, tk.END)
     weight_entry.delete(0, tk.END)
     reps_entry.delete(0, tk.END)
+    
+def view_progress(data):
+    tracker_temp_df = pd.read_csv(log_file)
+    
+    # Filter the data for the selected exercise
+    exercise_data = data[data["exercise"] == selected_exercise]
+    
+    if exercise_data.empty:
+        messagebox.showinfo("No Data", f"No data found for exercise: {selected_exercise}")
+        return
+
+    plt.plot(tracker_temp_df["date"], tracker_temp_df["weight"])
+    plt.xlabel("Date")
+    plt.ylabel("Weight (lbs)")
+    
+    plt.show()
+    
+def open_popup_window1():
+    popup = tk.Toplevel()
+    popup.title("Select Exercise to Plot")
+    popup.geometry("400x200")
+
+    # Instruction label
+    instruction_label = tk.Label(popup, text="Select an exercise to view its progress:", font=("Arial", 12))
+    instruction_label.pack(pady=10)
+
+    # Dropdown menu for exercise selection
+    progress_data = load_data()
+
+    # Converts the progress_data into a dataframe for the unique exercise and into a list
+    progress_df = pd.DataFrame(progress_data)
+    if "exercise" in progress_df.columns:
+        unique_exercises = progress_df["exercise"].unique().tolist()
+    else:
+        unique_exercises = []
+
+    exercise_combobox = ttk.Combobox(popup, values=unique_exercises, state="readonly", width=30)
+    exercise_combobox.pack(pady=5)
+
+    def on_plot_button_click():
+        selected_exercise = exercise_combobox.get()
+        if not selected_exercise:
+            messagebox.showwarning("Input Error", "Please select an exercise.")
+        else:
+            plot_selected_exercise(selected_exercise)
+
+    # Button to generate the graph
+    plot_button = tk.Button(popup, text="Plot Exercise Progress", command=on_plot_button_click)
+    plot_button.pack(pady=10)
+    
+def open_popup_window2():
+    popup2 = tk.Toplevel()
+    popup2.title(f"Progress for {selected_exercise}")
+    popup2.geometry("900x600")
+
+    # Embed the Matplotlib figure in the Tkinter popup window
+    canvas = FigureCanvasTkAgg(fig, master=popup2)
+    canvas.draw()
+    canvas.get_tk_widget().pack(fill="both", expand=True)
     
 data = load_data()
 
