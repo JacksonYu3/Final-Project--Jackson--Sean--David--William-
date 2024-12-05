@@ -166,40 +166,40 @@ def calves_fun():
 
 def tracker_button():
     title_text = tk.Label(root, text="Past Exercise List", font=("Arial", 12,"bold"))
-title_text.pack(pady=5)
+    title_text.pack(pady=5)
 
-label1 = tk.Label(root, text="Your past exercises: ")
-label1.pack(pady=10)
+    label1 = tk.Label(root, text="Your past exercises: ")
+    label1.pack(pady=10)
 
-show_past_button = tk.Button(root, text="Refresh/Show", command=lambda: view_exercises(data))
-show_past_button.pack()
+    show_past_button = tk.Button(root, text="Refresh/Show", command=lambda: view_exercises(data))
+    show_past_button.pack()
 
-show_past = scrolledtext.ScrolledText(root, width=70, height=20)
-show_past.pack(pady=10)
+    show_past = scrolledtext.ScrolledText(root, width=70, height=20)
+    show_past.pack(pady=10)
 
-label2 = tk.Label(root, text="Add today's exercise!")
-label2.pack(pady=10)
+    label2 = tk.Label(root, text="Add today's exercise!")
+    label2.pack(pady=10)
 
-exercise_label = tk.Label(root, text="Name of exercise")
-exercise_label.pack()
-exercise_entry = tk.Entry(root, width=30)
-exercise_entry.pack(pady=5)
+    exercise_label = tk.Label(root, text="Name of exercise")
+    exercise_label.pack()
+    exercise_entry = tk.Entry(root, width=30)
+    exercise_entry.pack(pady=5)
 
-weight_label = tk.Label(root, text="lbs")
-weight_label.pack()
-weight_entry = tk.Entry(root, width=30)
-weight_entry.pack(pady=5)
+    weight_label = tk.Label(root, text="lbs")
+    weight_label.pack()
+    weight_entry = tk.Entry(root, width=30)
+    weight_entry.pack(pady=5)
 
-reps_label = tk.Label(root, text="# of reps")
-reps_label.pack()
-reps_entry = tk.Entry(root, width=30)
-reps_entry.pack(pady=5)
+    reps_label = tk.Label(root, text="# of reps")
+    reps_label.pack()
+    reps_entry = tk.Entry(root, width=30)
+    reps_entry.pack(pady=5)
 
-add_exercise_button = tk.Button(root, text="Add exercise!", command=lambda: add_exercise(data))
-add_exercise_button.pack(pady=10)
+    add_exercise_button = tk.Button(root, text="Add exercise!", command=lambda: add_exercise(data))
+    add_exercise_button.pack(pady=10)
 
-view_progress_button = tk.Button(root, text="View Progress", command=open_popup_window1)
-view_progress_button.pack(pady=10)
+    view_progress_button = tk.Button(root, text="View Progress", command=open_popup_window1)
+    view_progress_button.pack(pady=10)
 
 def bodies_buttons():
     #creates the image of the human bodies
@@ -368,6 +368,7 @@ def open_popup_window2():
     canvas = FigureCanvasTkAgg(fig, master=popup2)
     canvas.draw()
     canvas.get_tk_widget().pack(fill="both", expand=True)
+
     
 data = load_data()
 
