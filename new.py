@@ -1,13 +1,14 @@
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
+from tkinter.messagebox import showinfo
 from datetime import datetime
 import PySimpleGUI as sg
 from PIL import Image, ImageTk, ImageSequence
 import os
 import time
+import random
 import csv
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from tkinter import ttk
 from bs4 import BeautifulSoup
 import requests
@@ -22,18 +23,35 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 import customtkinter as ctk
-import random 
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 path = r"C:\Users\billy\OneDrive\Documents\GitHub\Final-Project--Jackson--Sean--David--William-\bodies.webp"
+
 root = tk.Tk()
 root.title("Exercise App")
 root.attributes("-fullscreen", True)
 root.title("Exercise App")
-#makes you able to switch between fullscreen and not by f11 and esc
 root.bind("<F11>", lambda event: root.attributes("-fullscreen", not root.attributes("-fullscreen")))
-root.bind("<Escape>", lambda event: root.attributes("-fullscreen", False))
+root.bind("<Escape>", lambda event: root.destroy())
+
+log_file = "exercise_log.csv"
+df = pd.read_csv("exerlist.csv")
+secondary = tk.Toplevel(root)
+secondary.geometry("890x686")
 choose_day_frame = tk.Frame(root)
 choose_exer_frame = tk.Frame(root)
+home_frame = tk.Frame(root)
+exer_frame = tk.Frame(root)
+tracker_frame = tk.Frame(root)
+exframe = ctk.CTkScrollableFrame(secondary, width = 890, height = 686, fg_color = "white")
+#learned about this from here https://www.youtube.com/watch?v=Envp9yHb2Ho 
+#https://github.com/TomSchimansky/CustomTkinter/wiki/CTkScrollableFrame
+exframe.pack()
+home_frame.pack()
+exer_frame.pack()
+choose_day_frame.pack()
+choose_exer_frame.pack()
+tracker_frame.pack()
 
 CheckButtonChest = tk.IntVar()
 CheckButtonTriceps = tk.IntVar()
@@ -64,6 +82,8 @@ CheckButton14th = tk.IntVar()
 CheckButton15th = tk.IntVar()
 CheckButton16th = tk.IntVar()
 
+global body_parts_list
+body_parts_list = []
 
 
 def show_gif(gifurl):
@@ -113,7 +133,6 @@ def byName(name):
     for i, r in df_withname.iterrows():
         tk.Label(exframe, text = f"name: {r['Name']}\nPrimary Muscles: {r['primary']}\nSecondary Muscles: {r['secondary']}", bg = "white").pack()
         tk.Button(exframe, text = "       GIF       ", command = lambda r=r: show_gif(r["GIF url"])).pack()
-    #See the sources for this in the documentation for byMusc function
 
 
 def byMusc(muscle):
@@ -133,20 +152,6 @@ def byMusc(muscle):
     #I used this to figure out an issue where the lambda function would call with the most recent row URL
     #https://stackoverflow.com/questions/10865116/tkinter-creating-buttons-in-for-loop-passing-command-arguments 
 
-root = tk.Tk()
-root.title("Exercise App")
-root.attributes("-fullscreen", True)
-root.title("Exercise App")
-#makes you able to switch between fullscreen and not by f11 and esc
-root.bind("<F11>", lambda event: root.attributes("-fullscreen", not root.attributes("-fullscreen")))
-root.bind("<Escape>", lambda event: root.attributes("-fullscreen", False))
-home_frame = tk.Frame(root).pack()
-exer_frame = tk.Frame(root).pack()
-
-
-log_file = "exercise_log.csv"
-df = pd.read_csv("exerlist.csv")
-
 
 def home_page():
     title_text = tk.Label(home_frame, text="Exercise Planner", font=("Arial", 12,"bold"))
@@ -160,92 +165,182 @@ def home_page():
     tracker_button = tk.Button(home_frame, text="Past Exercises", font=50, command=go_to_tracker)
     tracker_button.pack(pady=5)
 
+    planner_button = tk.Button(home_frame, text="Workout Planner", font=50, command=go_to_plan)
+    planner_button.pack(pady=5)
+
 
 def go_to_exer():
+    home_frame.forget()
+    exer_frame.tkraise()
     bodies_buttons()
 
 def go_to_tracker():
+    home_frame.forget()
+    tracker_frame.tkraise()
     tracker_button()
     
+def go_to_plan():
+    home_frame.forget()
+    choose_day_frame.tkraise()
+    choose_day()
 
-#back button function
-def quit():
-    root.destroy()
-    root.mainloop()
-
+def backft():
+    tracker_frame.forget()
+    home_frame.tkraise()
+    home_page()
+def backfp():
+    choose_day_frame.forget()
+    home_frame.tkraise()
+    home_page()
+def backfe():
+    exer_frame.forget()
+    home_frame.tkraise()
+    home_page()
+def back():
+    
+    home_frame.tkraise()
+    home_page()
 
 #body part functions
 def shoulders_fun():
     byMusc("Deltoid")
-    #root.quit()
 def biceps_fun():
     byMusc("Bicep")
-    #root.quit()
 def triceps_fun():
     byMusc("Tricep")
-    #root.quit()
 def forearms_fun():
     byMusc("Forearms")
-    #root.quit()
 def chest_fun():
     byMusc("Chest")
-    #root.quit()
 def back_fun():
     byMusc("Lat")
-    #root.quit()
 def abs_fun():
     byMusc("Abs")
-    #root.quit()
 def glutes_fun():
     byMusc("Glute")
-    #root.quit()
 def quad_fun():
     byMusc("Quad")
 def ham_fun():
     byMusc("Ham")
-    #root.quit()
 def calves_fun():
     byMusc("Calve")
-    #root.quit()
+
 
 def tracker_button():
-    global exercise_entry, weight_entry, reps_entry, show_past 
+    global exercise_entry, weight_entry, reps_entry, show_past, exercise_label, current_index
 
-    title_text = tk.Label(root, text="Past Exercise List", font=("Arial", 12,"bold"))
-    title_text.pack(pady=5)
+    def update_exercise_label():
+        """Update the exercise label to show the current element of body_parts_list."""
+        if current_index < len(exercises_list):
+            exercise_label.config(text=exercises_list[current_index])
+        else:
+            exercise_label.config(text="No more exercises!")
+            next_button.config(state="disabled")
 
-    label1 = tk.Label(root, text="Your past exercises: ")
-    label1.pack(pady=10)
+    def next_exercise():
+        """Go to the next exercise in the list."""
+        global current_index
+        current_index += 1
+        update_exercise_label()
 
-    show_past_button = tk.Button(root, text="Refresh/Show", command=lambda: view_exercises(data))
-    show_past_button.pack()
+    if not body_parts_list:  # If the list is empty
+        # Back button
+        back_button = tk.Button(tracker_frame, text="Back", command=backft)
+        back_button.place(x=0, y=0)
 
-    show_past = scrolledtext.ScrolledText(root, width=70, height=20)
-    show_past.pack(pady=10)
+        # Title and labels
+        title_text = tk.Label(tracker_frame, text="Past Exercise List", font=("Arial", 12, "bold"))
+        title_text.pack(pady=5)
 
-    label2 = tk.Label(root, text="Add today's exercise!")
-    label2.pack(pady=10)
+        label1 = tk.Label(tracker_frame, text="Your past exercises:")
+        label1.pack(pady=10)
 
-    exercise_label = tk.Label(root, text="Name of exercise")
-    exercise_label.pack()
-    exercise_entry = tk.Entry(root, width=30)
-    exercise_entry.pack(pady=5)
+        # Show past button
+        show_past_button = tk.Button(tracker_frame, text="Refresh/Show", command=lambda: view_exercises(data))
+        show_past_button.pack()
 
-    weight_label = tk.Label(root, text="lbs")
-    weight_label.pack()
-    weight_entry = tk.Entry(root, width=30)
-    weight_entry.pack(pady=5)
+        show_past = scrolledtext.ScrolledText(tracker_frame, width=70, height=20)
+        show_past.pack(pady=10)
 
-    reps_label = tk.Label(root, text="# of reps")
-    reps_label.pack()
-    reps_entry = tk.Entry(root, width=30)
-    reps_entry.pack(pady=5)
+        label2 = tk.Label(tracker_frame, text="Add today's exercise!")
+        label2.pack(pady=10)
 
-    add_exercise_button = tk.Button(root, text="Add exercise!", command=lambda: add_exercise(data))
-    add_exercise_button.pack(pady=10)
+        # Exercise input
+        exercise_label = tk.Label(tracker_frame, text="Name of exercise")
+        exercise_label.pack()
+        exercise_entry = tk.Entry(tracker_frame, width=30)
+        exercise_entry.pack(pady=5)
 
-    view_progress_button = tk.Button(root, text="View Progress", command=open_popup_window1)
-    view_progress_button.pack(pady=10)
+        # Weight input
+        weight_label = tk.Label(tracker_frame, text="lbs")
+        weight_label.pack()
+        weight_entry = tk.Entry(tracker_frame, width=30)
+        weight_entry.pack(pady=5)
+
+        # Reps input
+        reps_label = tk.Label(tracker_frame, text="# of reps")
+        reps_label.pack()
+        reps_entry = tk.Entry(tracker_frame, width=30)
+        reps_entry.pack(pady=5)
+
+        # Buttons
+        add_exercise_button = tk.Button(tracker_frame, text="Add exercise!", command=lambda: add_exercise(data))
+        add_exercise_button.pack(pady=10)
+
+        view_progress_button = tk.Button(tracker_frame, text="View Progress", command=open_popup_window1)
+        view_progress_button.pack(pady=10)
+    else:  # If the list is not empty
+        current_index = 0  # Start with the first element in the list
+
+        # Back button
+        back_button = tk.Button(tracker_frame, text="Back", command=backft)
+        back_button.place(x=0, y=0)
+
+        # Title and labels
+        title_text = tk.Label(tracker_frame, text="Past Exercise List", font=("Arial", 12, "bold"))
+        title_text.pack(pady=5)
+
+        label1 = tk.Label(tracker_frame, text="Your past exercises:")
+        label1.pack(pady=10)
+
+        # Show past button
+        show_past_button = tk.Button(tracker_frame, text="Refresh/Show", command=lambda: view_exercises(data))
+        show_past_button.pack()
+
+        show_past = scrolledtext.ScrolledText(tracker_frame, width=70, height=20)
+        show_past.pack(pady=10)
+
+        label2 = tk.Label(tracker_frame, text="Add today's exercise!")
+        label2.pack(pady=10)
+
+        # Exercise input with dynamic label
+        exercise_label = tk.Label(tracker_frame, text="")
+        exercise_label.pack()
+        update_exercise_label()  # Initialize the label with the first element
+
+        # Next button to iterate through the list
+        next_button = tk.Button(tracker_frame, text="Next Exercise", command=next_exercise)
+        next_button.pack(pady=5)
+
+        # Weight input
+        weight_label = tk.Label(tracker_frame, text="lbs")
+        weight_label.pack()
+        weight_entry = tk.Entry(tracker_frame, width=30)
+        weight_entry.pack(pady=5)
+
+        # Reps input
+        reps_label = tk.Label(tracker_frame, text="# of reps")
+        reps_label.pack()
+        reps_entry = tk.Entry(tracker_frame, width=30)
+        reps_entry.pack(pady=5)
+
+        # Buttons
+        add_exercise_button = tk.Button(tracker_frame, text="Add exercise!", command=lambda: add_exercise(data))
+        add_exercise_button.pack(pady=10)
+
+        view_progress_button = tk.Button(tracker_frame, text="View Progress", command=open_popup_window1)
+        view_progress_button.pack(pady=10)
+
 
 def bodies_buttons():
     #creates the image of the human bodies
@@ -253,7 +348,7 @@ def bodies_buttons():
     height = root.winfo_screenheight()
     global image
     image = ImageTk.PhotoImage(Image.open(path))
-    canvas = tk.Canvas(exer_frame)
+    canvas = tk.Canvas(exer_frame, width=width, height=height)
     canvas.create_image(width / 2, height / 2, image=image, anchor="center")
 
 
@@ -275,9 +370,8 @@ def bodies_buttons():
 
 
     #back button
-    exit_btn = tk.Button(exer_frame, text="Back", command=quit)
-    exit_btn.place(x=50, y=50) #this should not lead to "back function" -- 
-    #that function refers to back muscles, not returning to home page.
+    back_button = tk.Button(exer_frame, text="Back", command=backfe)
+    back_button.place(x=0, y=0)
 
 
     #body part buttons
@@ -294,8 +388,8 @@ def bodies_buttons():
     calves_btn = tk.Button(exer_frame, text="Calves", command=calves_fun)
     exername = tk.StringVar() 
     exername.set("")
-    searchbar = tk.Entry(root, textvariable = exername)
-    enter = tk.Button(root, text = "Search", command=lambda: byName(exername.get()))
+    searchbar = tk.Entry(exer_frame, textvariable = exername)
+    enter = tk.Button(exer_frame, text = "Search", command=lambda: byName(exername.get()))
 
 
     #body part button placements
@@ -355,23 +449,43 @@ def add_exercise(data):
     exercise_entry.delete(0, tk.END)
     weight_entry.delete(0, tk.END)
     reps_entry.delete(0, tk.END)
-    
+
 def view_progress(selected_exercise, data):
-    tracker_temp_df = pd.read_csv(log_file)
-    
+    # Load the data into a DataFrame
+    tracker_temp_df = pd.DataFrame(data)
+
+    # Ensure the necessary columns exist
+    if "date" not in tracker_temp_df.columns or "weight" not in tracker_temp_df.columns or "exercise" not in tracker_temp_df.columns:
+        messagebox.showerror("Error", "The data is missing required columns: 'date', 'weight', or 'exercise'.")
+        return
+
     # Filter the data for the selected exercise
-    exercise_data = data[data["exercise"] == selected_exercise]
-    
+    exercise_data = tracker_temp_df[tracker_temp_df["exercise"] == selected_exercise]
+
     if exercise_data.empty:
         messagebox.showinfo("No Data", f"No data found for exercise: {selected_exercise}")
         return
 
-    plt.plot(tracker_temp_df["date"], tracker_temp_df["weight"])
+    # Convert the 'date' column to datetime
+    exercise_data["date"] = pd.to_datetime(exercise_data["date"], errors="coerce")
+
+    # Drop rows with invalid dates
+    exercise_data = exercise_data.dropna(subset=["date"])
+
+    # Sort by date for proper plotting
+    exercise_data = exercise_data.sort_values(by="date")
+
+    # Plot the data
+    plt.figure(figsize=(10, 5))
+    plt.plot(exercise_data["date"], exercise_data["weight"], marker="o", linestyle="-", label="Weight (lbs)")
+    plt.title(f"Progress for {selected_exercise}")
     plt.xlabel("Date")
     plt.ylabel("Weight (lbs)")
-    
+    plt.xticks(rotation=45)
+    plt.legend()
+    plt.tight_layout()
     plt.show()
-    
+
 def open_popup_window1():
     popup = tk.Toplevel()
     popup.title("Select Exercise to Plot")
@@ -395,6 +509,7 @@ def open_popup_window1():
     exercise_combobox.pack(pady=5)
 
     def on_plot_button_click():
+        global selected_exercise
         selected_exercise = exercise_combobox.get()
         if not selected_exercise:
             messagebox.showwarning("Input Error", "Please select an exercise.")
@@ -411,7 +526,7 @@ def open_popup_window2():
     popup2.geometry("900x600")
 
     # Embed the Matplotlib figure in the Tkinter popup window
-    canvas = FigureCanvasTkAgg(fig, master=popup2)
+    canvas = FigureCanvasTkAgg(master=popup2)
     canvas.draw()
     canvas.get_tk_widget().pack(fill="both", expand=True)
 
@@ -419,6 +534,9 @@ def open_popup_window2():
 
 # checkbuttons from https://www.geeksforgeeks.org/python-tkinter-checkbutton-widget/
 def choose_day():
+    back_button = tk.Button(choose_day_frame, text="Back", command=backfp)
+    back_button.place(x=0, y=0)
+
     bodyparts_lbl = tk.Label(choose_day_frame, text="Choose the body parts you want to workout today:").pack()
 
 
@@ -437,12 +555,12 @@ def choose_day():
 
     save_parts_btn = tk.Button(choose_day_frame, text="Save parts for the day.", command=save_parts).pack()
 
+def backer():
+    choose_exer_frame.forget()
+    choose_day_frame.tkraise()
+
 
 def save_parts():
-    global body_parts_list
-    body_parts_list = []
-
-
     if CheckButtonChest.get() == 1:
         body_parts_list.append("Chest")
     if CheckButtonTriceps.get() == 1:
@@ -485,6 +603,8 @@ def choose_exercises():
     global all_exercises_list
     all_exercises_list = []
 
+    back_button = tk.Button(choose_exer_frame, text="Back", command=backer)
+    back_button.place(x=0, y=0)
 
     c=0
 
@@ -802,21 +922,19 @@ def save_exercises():
         if var.get()==1:
             exercises_list.append(exercise)
    
-    print(exercises_list)
+    tracker_button()
 
 
 
 
-choose_day_frame.pack()
-choose_exer_frame.pack()
 
 
 data = load_data()
 
 
-choose_day()
+home_page()
 
 root.mainloop()
 
-print(body_parts_list)
-print(exercises_list)
+# print(body_parts_list)
+# print(exercises_list)
