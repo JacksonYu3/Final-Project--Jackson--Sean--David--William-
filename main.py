@@ -7,6 +7,7 @@ import os
 import time
 import csv
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from tkinter import ttk
 from bs4 import BeautifulSoup
 import requests
