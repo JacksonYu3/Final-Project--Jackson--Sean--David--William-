@@ -61,10 +61,15 @@ def show_gif(gifurl):
             window['-IMAGE-'].update(data=ImageTk.PhotoImage(frame) )
 
 def byName(name):
-    df_withname = df.loc[df['Name'] == name]
+    df_withname = df.loc[df['Name'].str.contains(name, na = False)]
+    secondary = tk.Toplevel(root)
+    secondary.geometry("890x686")
+    exframe = ctk.CTkScrollableFrame(secondary, width = 890, height = 686, fg_color = "white")
+    exframe.pack()
     for i, r in df_withname.iterrows():
-        print(f"name: {r['Name']}\nPrimary Muscles: {r['primary']}\nSecondary Muscles: {r['secondary']}")
-        #Can't display gifs yet so won't bother printing gif URL
+        tk.Label(exframe, text = f"name: {r['Name']}\nPrimary Muscles: {r['primary']}\nSecondary Muscles: {r['secondary']}", bg = "white").pack()
+        tk.Button(exframe, text = "       GIF       ", command = lambda r=r: show_gif(r["GIF url"])).pack()
+    #See the sources for this in the documentation for byMusc function
 
 
 def byMusc(muscle):
@@ -74,7 +79,6 @@ def byMusc(muscle):
     #when I was getting errors
     secondary = tk.Toplevel(root)
     secondary.geometry("890x686")
-    exercises = ""
     exframe = ctk.CTkScrollableFrame(secondary, width = 890, height = 686, fg_color = "white")
     #learned about this from here https://www.youtube.com/watch?v=Envp9yHb2Ho 
     #https://github.com/TomSchimansky/CustomTkinter/wiki/CTkScrollableFrame
@@ -222,8 +226,9 @@ def bodies_buttons():
 
 
     #back button
-    back_btn = tk.Button(exer_frame, text="Back", command=back_fun)
-    back_btn.place(x=50, y=50)
+    exit_btn = tk.Button(exer_frame, text="Back", command=quit)
+    exit_btn.place(x=50, y=50) #this should not lead to "back function" -- 
+    #that function refers to back muscles, not returning to home page.
 
 
     #body part buttons
@@ -238,6 +243,10 @@ def bodies_buttons():
     legs_btn1 = tk.Button(exer_frame, text="Hamstrings", command=ham_fun)
     legs_btn2 = tk.Button(exer_frame, text="Quads", command=quad_fun)
     calves_btn = tk.Button(exer_frame, text="Calves", command=calves_fun)
+    exername = tk.StringVar() 
+    exername.set("")
+    searchbar = tk.Entry(root, textvariable = exername)
+    enter = tk.Button(root, text = "Search", command=lambda: byName(exername.get()))
 
 
     #body part button placements
@@ -252,6 +261,8 @@ def bodies_buttons():
     legs_btn1.place(x=9*width/32, y=500, anchor="e")
     legs_btn2.place(x=7*width/10, y=500, anchor="w")
     calves_btn.place(x=7*width/10, y=650, anchor="w")
+    searchbar.place(x=150, y = 500, anchor = "e")
+    enter.place(x=100, y=550, anchor = "e")
 
 def load_data():
     data = []
