@@ -143,16 +143,18 @@ def back_fun():
     byMusc("Lat")
     #root.quit()
 def abs_fun():
-    byMusc("abs")
+    byMusc("Abs")
     #root.quit()
 def glutes_fun():
-    byMusc("glutes")
+    byMusc("Glute")
     #root.quit()
-def legs_fun():
-    byMusc("legs")
+def quad_fun():
+    byMusc("Quad")
+def ham_fun():
+    byMusc("Ham")
     #root.quit()
 def calves_fun():
-    byMusc("calves")
+    byMusc("Calve")
     #root.quit()
 
 
@@ -198,8 +200,8 @@ def bodies_buttons():
     back_btn = tk.Button(exer_frame, text="Back", command=back_fun)
     abs_btn = tk.Button(exer_frame, text="Abs", command=abs_fun)
     glutes_btn = tk.Button(exer_frame, text="Glutes", command=glutes_fun)
-    legs_btn1 = tk.Button(exer_frame, text="Legs", command=legs_fun)
-    legs_btn2 = tk.Button(exer_frame, text="Legs", command=legs_fun)
+    legs_btn1 = tk.Button(exer_frame, text="Hamstrings", command=ham_fun)
+    legs_btn2 = tk.Button(exer_frame, text="Quads", command=quad_fun)
     calves_btn = tk.Button(exer_frame, text="Calves", command=calves_fun)
 
 
