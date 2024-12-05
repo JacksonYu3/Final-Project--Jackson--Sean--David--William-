@@ -201,6 +201,8 @@ def calves_fun():
     #root.quit()
 
 def tracker_button():
+    global exercise_entry, weight_entry, reps_entry, show_past 
+
     title_text = tk.Label(root, text="Past Exercise List", font=("Arial", 12,"bold"))
     title_text.pack(pady=5)
 
@@ -322,7 +324,7 @@ def save_data(data):
 def view_exercises(data):
     show_past.delete("1.0", tk.END)
     if not data:
-        print("No exercise logs found.")
+        show_past.insert(tk.END, "No exercise logs found.\n")
         return
     
     show_past.insert(tk.END, "Exercise Log:\n")
@@ -346,7 +348,7 @@ def add_exercise(data):
     weight_entry.delete(0, tk.END)
     reps_entry.delete(0, tk.END)
     
-def view_progress(data):
+def view_progress(selected_exercise, data):
     tracker_temp_df = pd.read_csv(log_file)
     
     # Filter the data for the selected exercise
@@ -389,7 +391,7 @@ def open_popup_window1():
         if not selected_exercise:
             messagebox.showwarning("Input Error", "Please select an exercise.")
         else:
-            plot_selected_exercise(selected_exercise)
+            view_progress(selected_exercise, data)
 
     # Button to generate the graph
     plot_button = tk.Button(popup, text="Plot Exercise Progress", command=on_plot_button_click)
