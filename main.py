@@ -6,6 +6,8 @@ from PIL import Image, ImageTk, ImageSequence
 import os
 import time
 import csv
+import matplotlib.pyplot as plt
+from tkinter import ttk
 from bs4 import BeautifulSoup
 import requests
 import html5lib
