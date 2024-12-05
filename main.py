@@ -24,6 +24,40 @@ import customtkinter as ctk
 
 path = r"C:\Users\billy\OneDrive\Documents\GitHub\Final-Project--Jackson--Sean--David--William-\bodies.webp"
 
+choose_day_frame = tk.Frame(root)
+choose_exer_frame = tk.Frame(root)
+
+CheckButtonChest = tk.IntVar()
+CheckButtonTriceps = tk.IntVar()
+CheckButtonShoulders = tk.IntVar()
+CheckButtonBack = tk.IntVar()
+CheckButtonBiceps = tk.IntVar()
+CheckButtonForearms = tk.IntVar()
+CheckButtonAbs = tk.IntVar()
+CheckButtonGlutes = tk.IntVar()
+CheckButtonQuads = tk.IntVar()
+CheckButtonHamstrings = tk.IntVar()
+CheckButtonCalves = tk.IntVar()
+
+CheckButton1st = tk.IntVar()
+CheckButton2nd = tk.IntVar()
+CheckButton3rd = tk.IntVar()
+CheckButton4th = tk.IntVar()
+CheckButton5th = tk.IntVar()
+CheckButton6th = tk.IntVar()
+CheckButton7th = tk.IntVar()
+CheckButton8th = tk.IntVar()
+CheckButton9th = tk.IntVar()
+CheckButton10th = tk.IntVar()
+CheckButton11th = tk.IntVar()
+CheckButton12th = tk.IntVar()
+CheckButton13th = tk.IntVar()
+CheckButton14th = tk.IntVar()
+CheckButton15th = tk.IntVar()
+CheckButton16th = tk.IntVar()
+
+
+
 def show_gif(gifurl):
     headers = {
     'User-Agent': 'Mozilla/5.0'
@@ -371,15 +405,408 @@ def open_popup_window2():
     canvas.draw()
     canvas.get_tk_widget().pack(fill="both", expand=True)
 
-    
+
+
+# checkbuttons from https://www.geeksforgeeks.org/python-tkinter-checkbutton-widget/
+def choose_day():
+    bodyparts_lbl = tk.Label(choose_day_frame, text="Choose the body parts you want to workout today:").pack()
+
+
+    chest_btn = tk.Checkbutton(choose_day_frame, text="Chest", onvalue=1, offvalue=0, variable=CheckButtonChest).pack()
+    triceps_btn = tk.Checkbutton(choose_day_frame, text="Triceps", onvalue=1, offvalue=0, variable=CheckButtonTriceps).pack()
+    shoulders_btn = tk.Checkbutton(choose_day_frame, text="Shoulders", onvalue=1, offvalue=0, variable=CheckButtonShoulders).pack()
+    back_btn = tk.Checkbutton(choose_day_frame, text="Back", onvalue=1, offvalue=0, variable=CheckButtonBack).pack()
+    biceps_btn = tk.Checkbutton(choose_day_frame, text="Biceps", onvalue=1, offvalue=0, variable=CheckButtonBiceps).pack()
+    forearms_btn = tk.Checkbutton(choose_day_frame, text="Forearms", onvalue=1, offvalue=0, variable=CheckButtonForearms).pack()
+    abs_btn = tk.Checkbutton(choose_day_frame, text="Abs", onvalue=1, offvalue=0, variable=CheckButtonAbs).pack()
+    glutes_btn = tk.Checkbutton(choose_day_frame, text="Glutes", onvalue=1, offvalue=0, variable=CheckButtonGlutes).pack()
+    quads_btn = tk.Checkbutton(choose_day_frame, text="Quads", onvalue=1, offvalue=0, variable=CheckButtonQuads).pack()
+    hamstrings_btn = tk.Checkbutton(choose_day_frame, text="Hamstrings", onvalue=1, offvalue=0, variable=CheckButtonHamstrings).pack()
+    calves_btn = tk.Checkbutton(choose_day_frame, text="Calves", onvalue=1, offvalue=0, variable=CheckButtonCalves).pack()
+
+
+    save_parts_btn = tk.Button(choose_day_frame, text="Save parts for the day.", command=save_parts).pack()
+
+
+def save_parts():
+    global body_parts_list
+    body_parts_list = []
+
+
+    if CheckButtonChest.get() == 1:
+        body_parts_list.append("Chest")
+    if CheckButtonTriceps.get() == 1:
+        body_parts_list.append("Triceps")
+    if CheckButtonShoulders.get() == 1:
+        body_parts_list.append("Front Deltoid")
+        body_parts_list.append("Lateral Deltoid")
+    if CheckButtonBack.get() == 1:
+        body_parts_list.append("Lats")
+        body_parts_list.append("Rear Deltoid")
+        body_parts_list.append("Lower Back")
+    if CheckButtonBiceps.get() == 1:
+        body_parts_list.append("Biceps")
+    if CheckButtonForearms.get() == 1:
+        body_parts_list.append("Forearm")
+    if CheckButtonAbs.get() == 1:
+        body_parts_list.append("Obliques")
+        body_parts_list.append("Abs")
+    if CheckButtonGlutes.get() == 1:
+        body_parts_list.append("Glutes")
+    if CheckButtonQuads.get() == 1:
+        body_parts_list.append("Quads")
+    if CheckButtonHamstrings.get() == 1:
+        body_parts_list.append("Hamstrings")
+    if CheckButtonCalves.get() == 1:
+        body_parts_list.append("Calves")
+
+
+    choose_day_frame.forget()
+    choose_exercises()
+
+
+def choose_exercises():
+    temp_list11 = []
+    temp_list21 = []
+    temp_list31 = []
+    temp_list41 = []
+
+
+    global all_exercises_list
+    all_exercises_list = []
+
+
+    c=0
+
+
+    if len(body_parts_list) == 0:
+        #showinfo from https://stackoverflow.com/questions/41946222/how-do-i-create-a-popup-window-in-tkinter
+        showinfo("Exercise App", "You didn't enter any exercises. Retry.")
+        choose_day_frame.tkraise()
+        choose_day()
+
+
+    elif len(body_parts_list) == 1:
+        for row in body_parts_list:
+            df_muscle = df.loc[df['primary'].str.contains(row, na = False)]
+            for j in df_muscle["Name"]:
+                temp_list11.append(j)
+
+
+            temp_list1 = random.sample(temp_list11, 6)
+   
+        exercises_lbl = tk.Label(choose_exer_frame, text="Choose 4 of the below exercises.").pack()
+
+
+        lbl1 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+        first_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[0], onvalue=1, offvalue=0, variable=CheckButton1st).pack()
+        second_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[1], onvalue=1, offvalue=0, variable=CheckButton2nd).pack()
+        third_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[2], onvalue=1, offvalue=0, variable=CheckButton3rd).pack()
+        fourth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[3], onvalue=1, offvalue=0, variable=CheckButton4th).pack()
+        fifth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[4], onvalue=1, offvalue=0, variable=CheckButton5th).pack()
+        sixth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[5], onvalue=1, offvalue=0, variable=CheckButton6th).pack()
+
+
+        all_exercises_list.append((temp_list1[0], CheckButton1st))
+        all_exercises_list.append((temp_list1[1], CheckButton2nd))
+        all_exercises_list.append((temp_list1[2], CheckButton3rd))
+        all_exercises_list.append((temp_list1[3], CheckButton4th))
+        all_exercises_list.append((temp_list1[4], CheckButton5th))
+        all_exercises_list.append((temp_list1[5], CheckButton6th))
+
+
+
+
+
+
+    elif len(body_parts_list) == 2:
+        exercises_lbl = tk.Label(choose_exer_frame, text="Choose 3 exercises for each of the below muscles.").pack()        
+
+
+        for row in body_parts_list:
+            c+=1
+            df_muscle = df.loc[df['primary'].str.contains(row, na = False)]
+           
+            if c == 1:
+                for j in df_muscle["Name"]:
+                    temp_list11.append(j)
+               
+                temp_list1 = random.sample(temp_list11, 5)
+
+
+                lbl1 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                first_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[0], onvalue=1, offvalue=0, variable=CheckButton1st).pack()
+                second_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[1], onvalue=1, offvalue=0, variable=CheckButton2nd).pack()
+                third_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[2], onvalue=1, offvalue=0, variable=CheckButton3rd).pack()
+                fourth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[3], onvalue=1, offvalue=0, variable=CheckButton4th).pack()
+                fifth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[4], onvalue=1, offvalue=0, variable=CheckButton5th).pack()
+
+
+                all_exercises_list.append((temp_list1[0], CheckButton1st))
+                all_exercises_list.append((temp_list1[1], CheckButton2nd))
+                all_exercises_list.append((temp_list1[2], CheckButton3rd))
+                all_exercises_list.append((temp_list1[3], CheckButton4th))
+                all_exercises_list.append((temp_list1[4], CheckButton5th))
+           
+           
+            if c == 2:
+                for j in df_muscle["Name"]:
+                    temp_list21.append(j)
+               
+                temp_list2 = random.sample(temp_list21, 5)
+
+
+                lbl2 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                sixth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[0], onvalue=1, offvalue=0, variable=CheckButton6th).pack()
+                seventh_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[1], onvalue=1, offvalue=0, variable=CheckButton7th).pack()
+                eighth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[2], onvalue=1, offvalue=0, variable=CheckButton8th).pack()
+                nineth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[3], onvalue=1, offvalue=0, variable=CheckButton9th).pack()
+                tenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[4], onvalue=1, offvalue=0, variable=CheckButton10th).pack()
+
+
+                all_exercises_list.append((temp_list2[0], CheckButton6th))
+                all_exercises_list.append((temp_list2[1], CheckButton7th))
+                all_exercises_list.append((temp_list2[2], CheckButton8th))
+                all_exercises_list.append((temp_list2[3], CheckButton9th))
+                all_exercises_list.append((temp_list2[4], CheckButton10th))
+
+
+           
+    elif len(body_parts_list) == 3:
+        exercises_lbl = tk.Label(choose_exer_frame, text="Choose 2 exercises for each of the below muscles.").pack()
+        for row in body_parts_list:
+            c+=1
+            df_muscle = df.loc[df['primary'].str.contains(row, na = False)]
+           
+            if c == 1:
+                for j in df_muscle["Name"]:
+                    temp_list11.append(j)
+               
+                temp_list1 = random.sample(temp_list11, 5)
+
+
+                lbl1 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                first_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[0], onvalue=1, offvalue=0, variable=CheckButton1st).pack()
+                second_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[1], onvalue=1, offvalue=0, variable=CheckButton2nd).pack()
+                third_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[2], onvalue=1, offvalue=0, variable=CheckButton3rd).pack()
+                fourth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[3], onvalue=1, offvalue=0, variable=CheckButton4th).pack()
+                fifth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[4], onvalue=1, offvalue=0, variable=CheckButton5th).pack()
+
+
+                all_exercises_list.append((temp_list1[0], CheckButton1st))
+                all_exercises_list.append((temp_list1[1], CheckButton2nd))
+                all_exercises_list.append((temp_list1[2], CheckButton3rd))
+                all_exercises_list.append((temp_list1[3], CheckButton4th))
+                all_exercises_list.append((temp_list1[4], CheckButton5th))
+
+
+           
+            if c == 2:
+                for j in df_muscle["Name"]:
+                    temp_list21.append(j)
+               
+                temp_list2 = random.sample(temp_list21, 5)
+
+
+                lbl2 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                sixth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[0], onvalue=1, offvalue=0, variable=CheckButton6th).pack()
+                seventh_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[1], onvalue=1, offvalue=0, variable=CheckButton7th).pack()
+                eighth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[2], onvalue=1, offvalue=0, variable=CheckButton8th).pack()
+                nineth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[3], onvalue=1, offvalue=0, variable=CheckButton9th).pack()
+                tenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[4], onvalue=1, offvalue=0, variable=CheckButton10th).pack()
+
+
+                all_exercises_list.append((temp_list2[0], CheckButton6th))
+                all_exercises_list.append((temp_list2[1], CheckButton7th))
+                all_exercises_list.append((temp_list2[2], CheckButton8th))
+                all_exercises_list.append((temp_list2[3], CheckButton9th))
+                all_exercises_list.append((temp_list2[4], CheckButton10th))
+
+
+           
+            if c == 3:
+                for j in df_muscle["Name"]:
+                    temp_list31.append(j)
+               
+                temp_list3 = random.sample(temp_list31, 5)
+
+
+                lbl3 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                eleventh_btn = tk.Checkbutton(choose_exer_frame, text=temp_list3[0], onvalue=1, offvalue=0, variable=CheckButton6th).pack()
+                twelfth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list3[1], onvalue=1, offvalue=0, variable=CheckButton7th).pack()
+                thirteenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list3[2], onvalue=1, offvalue=0, variable=CheckButton8th).pack()
+                fourteenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list3[3], onvalue=1, offvalue=0, variable=CheckButton9th).pack()
+                fifteenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list3[4], onvalue=1, offvalue=0, variable=CheckButton10th).pack()
+
+
+                all_exercises_list.append((temp_list3[0], CheckButton11th))
+                all_exercises_list.append((temp_list3[1], CheckButton12th))
+                all_exercises_list.append((temp_list3[2], CheckButton13th))
+                all_exercises_list.append((temp_list3[3], CheckButton14th))
+                all_exercises_list.append((temp_list3[4], CheckButton15th))
+
+
+
+
+    elif len(body_parts_list) == 4:
+        exercises_lbl = tk.Label(choose_exer_frame, text="Choose 2 exercises for each of the below muscles.").pack()
+        for row in body_parts_list:
+            c+=1
+            df_muscle = df.loc[df['primary'].str.contains(row, na = False)]
+           
+            if c == 1:
+                for j in df_muscle["Name"]:
+                    temp_list11.append(j)
+               
+                temp_list1 = random.sample(temp_list11, 4)
+
+
+                lbl1 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                first_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[0], onvalue=1, offvalue=0, variable=CheckButton1st).pack()
+                second_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[1], onvalue=1, offvalue=0, variable=CheckButton2nd).pack()
+                third_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[2], onvalue=1, offvalue=0, variable=CheckButton3rd).pack()
+                fourth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list1[3], onvalue=1, offvalue=0, variable=CheckButton4th).pack()
+
+
+                all_exercises_list.append((temp_list1[0], CheckButton1st))
+                all_exercises_list.append((temp_list1[1], CheckButton2nd))
+                all_exercises_list.append((temp_list1[2], CheckButton3rd))
+                all_exercises_list.append((temp_list1[3], CheckButton4th))
+           
+           
+            if c == 2:
+                for j in df_muscle["Name"]:
+                    temp_list21.append(j)
+
+
+                temp_list2 = random.sample(temp_list21, 4)
+
+
+                lbl2 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                fifth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[0], onvalue=1, offvalue=0, variable=CheckButton5th).pack()
+                sixth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[1], onvalue=1, offvalue=0, variable=CheckButton6th).pack()
+                seventh_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[2], onvalue=1, offvalue=0, variable=CheckButton7th).pack()
+                eighth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[3], onvalue=1, offvalue=0, variable=CheckButton8th).pack()
+
+
+                all_exercises_list.append((temp_list2[0], CheckButton5th))
+                all_exercises_list.append((temp_list2[1], CheckButton6th))
+                all_exercises_list.append((temp_list2[2], CheckButton7th))
+                all_exercises_list.append((temp_list2[3], CheckButton8th))
+
+
+
+
+            if c == 3:
+                for j in df_muscle["Name"]:
+                    temp_list31.append(j)
+               
+                temp_list3 = random.sample(temp_list31, 4)
+
+
+                lbl3 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                nineth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[0], onvalue=1, offvalue=0, variable=CheckButton9th).pack()
+                tenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list2[1], onvalue=1, offvalue=0, variable=CheckButton10th).pack()
+                eleventh_btn = tk.Checkbutton(choose_exer_frame, text=temp_list3[2], onvalue=1, offvalue=0, variable=CheckButton11th).pack()
+                twelfth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list3[3], onvalue=1, offvalue=0, variable=CheckButton12th).pack()
+
+
+                all_exercises_list.append((temp_list3[0], CheckButton9th))
+                all_exercises_list.append((temp_list3[1], CheckButton10th))
+                all_exercises_list.append((temp_list3[2], CheckButton11th))
+                all_exercises_list.append((temp_list3[3], CheckButton12th))
+
+
+
+
+            if c == 4:
+                for j in df_muscle["Name"]:
+                    temp_list41.append(j)
+
+
+                temp_list4 = random.sample(temp_list41, 5)
+
+
+                lbl4 = tk.Label(choose_exer_frame, text=row).pack()
+
+
+                thirteenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list4[0], onvalue=1, offvalue=0, variable=CheckButton13th).pack()
+                fourteenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list4[1], onvalue=1, offvalue=0, variable=CheckButton14th).pack()
+                fifteenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list4[2], onvalue=1, offvalue=0, variable=CheckButton15th).pack()
+                sixteenth_btn = tk.Checkbutton(choose_exer_frame, text=temp_list4[3], onvalue=1, offvalue=0, variable=CheckButton16th).pack()
+
+
+                all_exercises_list.append((temp_list4[0], CheckButton13th))
+                all_exercises_list.append((temp_list4[1], CheckButton14th))
+                all_exercises_list.append((temp_list4[2], CheckButton15th))
+                all_exercises_list.append((temp_list4[3], CheckButton16th))
+
+
+   
+    elif len(body_parts_list) >= 5:
+        #showinfo from https://stackoverflow.com/questions/41946222/how-do-i-create-a-popup-window-in-tkinter
+        showinfo("Exercise App", "You entered a lot of different muscle groups. Try focusing your workout by exercising less of them.")
+        choose_day_frame.tkraise()
+        choose_day()
+
+
+
+
+    exercises_btn = tk.Button(choose_exer_frame, text="Start Workout", command=save_exercises).pack()
+
+
+        #I used this https://www.geeksforgeeks.org/select-rows-that-contain-specific-text-using-pandas/
+        #and this https://stackoverflow.com/questions/66536221/getting-cannot-mask-with-non-boolean-array-containing-na-nan-values-but-the
+        #when I was getting errors
+        # for i, r in df_muscle.iterrows():
+        #     print(f"name: {r['Name']}")#\nPrimary Muscles: {r['primary']}")#\nSecondary Muscles: {r['secondary']}")
+
+
+
+
+def save_exercises():
+    choose_exer_frame.forget()
+    global exercises_list
+    exercises_list = []
+
+
+    for exercise, var in all_exercises_list:
+        if var.get()==1:
+            exercises_list.append(exercise)
+   
+    print(exercises_list)
+
+
+
+
+choose_day_frame.pack()
+choose_exer_frame.pack()
+
+
 data = load_data()
 
 
-home_page()
-
-
-
-
-
+choose_day()
 
 root.mainloop()
+
+print(body_parts_list)
+print(exercises_list)
