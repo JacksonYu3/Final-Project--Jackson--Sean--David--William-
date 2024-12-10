@@ -32,7 +32,7 @@ root.title("Exercise App")
 root.attributes("-fullscreen", True)
 root.title("Exercise App")
 root.bind("<F11>", lambda event: root.attributes("-fullscreen", not root.attributes("-fullscreen")))
-root.bind("<Escape>", lambda event: root.destroy())
+root.bind("<Escape>", lambda event: root.quit())
 
 log_file = "exercise_log.csv"
 df = pd.read_csv("exerlist.csv")
@@ -117,12 +117,14 @@ def show_gif(gifurl):
     layout = [[sg.Image(key='-IMAGE-')]]
     window = sg.Window('Window', layout, element_justification='c', margins=(0,0), element_padding=(0,0), finalize=True)
     interframe_duration = Image.open(gif_filename).info['duration']
-    while True:
+    i = 0
+    while i == 0:
         for frame in ImageSequence.Iterator(Image.open(gif_filename)):
             event, values = window.read(timeout=interframe_duration)
             if event == sg.WIN_CLOSED:
-                exit(0)
-            window['-IMAGE-'].update(data=ImageTk.PhotoImage(frame) )
+                i = 1
+            else:
+                window['-IMAGE-'].update(data=ImageTk.PhotoImage(frame) )
 
 def byName(name):
     df_withname = df.loc[df['Name'].str.contains(name.title(), na = False)]
