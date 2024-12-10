@@ -125,7 +125,9 @@ def show_gif(gifurl):
             window['-IMAGE-'].update(data=ImageTk.PhotoImage(frame) )
 
 def byName(name):
-    df_withname = df.loc[df['Name'].str.contains(name, na = False)]
+    df_withname = df.loc[df['Name'].str.contains(name.title(), na = False)]
+    #https://stackoverflow.com/questions/1549641/how-can-i-capitalize-the-first-letter-of-each-word-in-a-string
+    #used this to find "title"
     secondary = tk.Toplevel(root)
     secondary.geometry("890x686")
     exframe = ctk.CTkScrollableFrame(secondary, width = 890, height = 686, fg_color = "white")
