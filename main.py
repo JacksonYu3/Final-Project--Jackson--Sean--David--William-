@@ -209,6 +209,9 @@ def go_to_exer():
     exer_frame.pack(fill="both", expand=True)
     bodies_buttons()
 def go_to_tracker():
+    global body_parts_list, exercises_list
+    body_parts_list = []
+    exercises_list = []
     home_frame.pack_forget()
     tracker_frame.pack(fill="both", expand=True)
     tracker_button_function()
@@ -258,6 +261,8 @@ def calves_fun():
 
 def tracker_button_function():
     global exercise_entry, weight_entry, reps_entry, show_past, exercise_label, current_index
+    for widget in tracker_frame.winfo_children():
+        widget.destroy()
 
     for widget in tracker_frame.winfo_children():
         widget.destroy()
@@ -408,6 +413,10 @@ def bodies_buttons():
     width = root.winfo_screenwidth()
     height = root.winfo_screenheight()
     global image
+
+    for widget in exer_frame.winfo_children(): #have to destroy and recreate the frame widgets
+        widget.destroy() #or else they get all malfunctional and weird https://stackoverflow.com/questions/24228114/how-to-make-widgets-visible-again-when-using-pack-forget-in-tkinter 
+
     image = ImageTk.PhotoImage(Image.open(path))
     canvas = tk.Canvas(exer_frame, width=width, height=height)
     canvas.create_image(width / 2, height / 2, image=image, anchor="center")
@@ -632,13 +641,14 @@ def open_popup_window2():
 # checkbuttons from https://www.geeksforgeeks.org/python-tkinter-checkbutton-widget/
 def choose_day():
 
+    global body_parts_list, exercises_list, bodyparts_lbl, chest_btn, triceps_btn, back_btn, shoulders_btn, forearms_btn, biceps_btn, abs_btn, glutes_btn, quads_btn, hamstrings_btn, calves_btn
 
-    body_parts_list.clear()
 
+    for widget in choose_day_frame.winfo_children():
+        widget.destroy()
 
-    if getattr(choose_day_frame, "initialized", False):
-        return
-
+    body_parts_list = []
+    exercises_list = []
 
     back_button = tk.Button(choose_day_frame, text="Back", command=backfp)
     back_button.place(x=0, y=0)
@@ -714,6 +724,8 @@ def save_parts():
 
 
 def choose_exercises():
+    for widget in choose_exer_frame.winfo_children():
+        widget.destroy()
     temp_list11 = []
     temp_list21 = []
     temp_list31 = []
@@ -1146,7 +1158,7 @@ def save_exercises():
     for exercise, var in all_exercises_list:
         if var.get()==1:
             exercises_list.append(exercise)
-   
+    tracker_frame.pack()
     tracker_button_function()
 
 
