@@ -1152,7 +1152,7 @@ def save_exercises():
     for exercise, var in all_exercises_list:
         if var.get()==1:
             exercises_list.append(exercise)
-   
+    tracker_frame.pack()
     tracker_button_function()
 
 
