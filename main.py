@@ -209,6 +209,9 @@ def go_to_exer():
     exer_frame.pack(fill="both", expand=True)
     bodies_buttons()
 def go_to_tracker():
+    global body_parts_list, exercises_list
+    body_parts_list = []
+    exercises_list = []
     home_frame.pack_forget()
     tracker_frame.pack(fill="both", expand=True)
     tracker_button_function()
@@ -258,6 +261,8 @@ def calves_fun():
 
 def tracker_button_function():
     global exercise_entry, weight_entry, reps_entry, show_past, exercise_label, current_index
+    for widget in tracker_frame.winfo_children():
+        widget.destroy()
 
 
     def update_exercise_label():
@@ -630,13 +635,14 @@ def open_popup_window2():
 # checkbuttons from https://www.geeksforgeeks.org/python-tkinter-checkbutton-widget/
 def choose_day():
 
+    global body_parts_list, exercises_list, bodyparts_lbl, chest_btn, triceps_btn, back_btn, shoulders_btn, forearms_btn, biceps_btn, abs_btn, glutes_btn, quads_btn, hamstrings_btn, calves_btn
 
-    body_parts_list.clear()
 
+    for widget in choose_day_frame.winfo_children():
+        widget.destroy()
 
-    if getattr(choose_day_frame, "initialized", False):
-        return
-
+    body_parts_list = []
+    exercises_list = []
 
     back_button = tk.Button(choose_day_frame, text="Back", command=backfp)
     back_button.place(x=0, y=0)
@@ -712,6 +718,8 @@ def save_parts():
 
 
 def choose_exercises():
+    for widget in choose_exer_frame.winfo_children():
+        widget.destroy()
     temp_list11 = []
     temp_list21 = []
     temp_list31 = []
