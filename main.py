@@ -242,7 +242,7 @@ def calves_fun():
 
 
 def tracker_button_function():
-    global exercise_entry, weight_entry, reps_entry, show_past, exercise_label, current_index
+    global exercise_entry, weight_entry, reps_entry, show_past, exercise_label, current_index, exercise_entry_string
 
     def update_exercise_label():
         """Update the exercise label to show the current element of body_parts_list."""
@@ -333,7 +333,7 @@ def tracker_button_function():
         exercise_label = tk.Label(tracker_frame, text="")
         exercise_label.pack()
         update_exercise_label()  # Initialize the label with the first element
-        exercise_entry = exercises_list[current_index]
+        exercise_entry_string = exercises_list[current_index]
 
         # Next button to iterate through the list
         next_button = tk.Button(tracker_frame, text="Next Exercise", command=next_exercise)
@@ -454,7 +454,7 @@ def add_exercise(data):
     if not body_parts_list:
         exercise = exercise_entry.get().lower()
     else: 
-        exercise = exercise_entry
+        exercise = exercise_entry_string
     
     weight = weight_entry.get()
     reps = reps_entry.get()
