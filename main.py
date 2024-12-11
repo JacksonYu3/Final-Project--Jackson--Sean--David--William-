@@ -259,6 +259,8 @@ def calves_fun():
 def tracker_button_function():
     global exercise_entry, weight_entry, reps_entry, show_past, exercise_label, current_index
 
+    for widget in tracker_frame.winfo_children():
+        widget.destroy()
 
     def update_exercise_label():
         """Update the exercise label to show the current element of body_parts_list."""
