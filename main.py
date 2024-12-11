@@ -411,6 +411,10 @@ def bodies_buttons():
     width = root.winfo_screenwidth()
     height = root.winfo_screenheight()
     global image
+
+    for widget in exer_frame.winfo_children(): #have to destroy and recreate the frame widgets
+        widget.destroy() #or else they get all malfunctional and weird https://stackoverflow.com/questions/24228114/how-to-make-widgets-visible-again-when-using-pack-forget-in-tkinter 
+
     image = ImageTk.PhotoImage(Image.open(path))
     canvas = tk.Canvas(exer_frame, width=width, height=height)
     canvas.create_image(width / 2, height / 2, image=image, anchor="center")
